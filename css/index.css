@@ -29,7 +29,8 @@
 body {
   font-family: 'Bariol';
   font-weight: normal;
-  margin: 0; }
+  margin: 0;
+  min-width: 730px; }
 
 .visible {
   display: block; }
@@ -323,7 +324,9 @@ body {
 
 body {
   background: #ffffff;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  min-width: 730px;
+  max-width: 100%; }
   body #story-loader {
     -webkit-transition: top 0.2s ease;
     -moz-transition: top 0.2s ease;
@@ -521,99 +524,132 @@ body {
           margin-right: 0; }
     body #story-stream #stories {
       width: 100%;
-      padding: 50px;
       background: #000; }
-      body #story-stream #stories #story-grid #block-story-1 {
-        background: url("../img/blocks/1.jpg");
-        background-size: cover;
-        background-repeat: no-repeat; }
-      body #story-stream #stories #story-grid #block-story-2 {
-        background: url("../img/blocks/2.jpg");
-        background-size: cover;
-        background-repeat: no-repeat; }
-      body #story-stream #stories #story-grid #block-story-3 {
-        background: url("../img/blocks/3.jpg");
-        background-size: cover;
-        background-repeat: no-repeat; }
-      body #story-stream #stories #story-grid #block-story-4 {
-        background: url("../img/blocks/4.jpg");
-        background-size: cover;
-        background-repeat: no-repeat; }
-      body #story-stream #stories #story-grid #block-story-5 {
-        background: url("../img/blocks/5.jpg");
-        background-size: cover;
-        background-repeat: no-repeat; }
-      body #story-stream #stories #story-grid #block-story-5 {
-        background: url("../img/blocks/5.jpg");
-        background-size: cover;
-        background-repeat: no-repeat; }
-      body #story-stream #stories #story-grid #block-story-6 {
-        background: url("../img/blocks/6.jpg");
-        background-size: cover;
-        background-repeat: no-repeat; }
-      body #story-stream #stories #story-grid #block-story-7 {
-        background: url("../img/blocks/7.jpg");
-        background-size: cover;
-        background-repeat: no-repeat; }
-      body #story-stream #stories #story-grid #block-story-8 {
-        background: url("../img/blocks/8.jpg");
-        background-size: cover;
-        background-repeat: no-repeat; }
-      body #story-stream #stories #story-grid #block-story-9 {
-        background: url("../img/blocks/9.jpg");
-        background-size: cover;
-        background-repeat: no-repeat; }
-      body #story-stream #stories #story-grid #block-story-10 {
-        background: url("../img/blocks/5.jpg");
-        background-size: cover;
-        background-repeat: no-repeat; }
-      body #story-stream #stories #story-grid .story-block {
-        -webkit-transition: all 0.25s ease;
-        -moz-transition: all 0.25s ease;
-        -ms-transition: all 0.25s ease;
-        -o-transition: all 0.25s ease;
-        transition: all 0.25s ease;
-        display: inline-block;
-        width: 225px;
-        height: 225px;
-        background: #9fddf0;
-        margin: 1px;
-        position: relative;
-        overflow: hidden; }
-        body #story-stream #stories #story-grid .story-block #block-title-container {
+      body #story-stream #stories #story-grid {
+        max-width: 1217px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; }
+        body #story-stream #stories #story-grid #block-story-1 {
+          background: url("../img/blocks/1.jpg") center;
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body #story-stream #stories #story-grid #block-story-2 {
+          background: url("../img/blocks/2.jpg");
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body #story-stream #stories #story-grid #block-story-3 {
+          background: url("../img/blocks/3.jpg");
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body #story-stream #stories #story-grid #block-story-4 {
+          background: url("../img/blocks/4.jpg");
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body #story-stream #stories #story-grid #block-story-5 {
+          background: url("../img/blocks/5.jpg");
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body #story-stream #stories #story-grid #block-story-5 {
+          background: url("../img/blocks/5.jpg");
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body #story-stream #stories #story-grid #block-story-6 {
+          background: url("../img/blocks/6.jpg");
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body #story-stream #stories #story-grid #block-story-7 {
+          background: url("../img/blocks/7.jpg");
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body #story-stream #stories #story-grid #block-story-8 {
+          background: url("../img/blocks/8.jpg");
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body #story-stream #stories #story-grid #block-story-9 {
+          background: url("../img/blocks/9.jpg");
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body #story-stream #stories #story-grid #block-story-10 {
+          background: url("../img/blocks/5.jpg");
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body #story-stream #stories #story-grid .story-block {
           -webkit-transition: all 0.25s ease;
           -moz-transition: all 0.25s ease;
           -ms-transition: all 0.25s ease;
           -o-transition: all 0.25s ease;
           transition: all 0.25s ease;
-          width: 100%;
-          height: 100px;
-          bottom: -100px;
-          position: absolute;
-          overflow: hidden; }
-          body #story-stream #stories #story-grid .story-block #block-title-container.title-visible {
-            bottom: 0; }
-          body #story-stream #stories #story-grid .story-block #block-title-container .block-title-background {
+          display: inline-block;
+          width: 300px;
+          height: 300px;
+          background: #000000;
+          margin: 0px;
+          position: relative;
+          overflow: hidden;
+          font-family: BariolThin; }
+          body #story-stream #stories #story-grid .story-block .block-title {
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -ms-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+            position: absolute;
+            text-align: center;
+            width: 90%;
+            height: 100%;
+            color: white;
+            font-size: 25pt;
+            margin: 10px;
+            opacity: 0;
+            z-index: 12;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 35%; }
+          body #story-stream #stories #story-grid .story-block .block-bg {
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -ms-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+            width: 110%;
+            height: 110%;
+            opacity: 1;
+            z-index: 10; }
+          body #story-stream #stories #story-grid .story-block .block-category {
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            -ms-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+            background: white;
+            border-top: 1px solid #e8e8e8;
+            width: 13%;
+            height: 13%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 11; }
+            body #story-stream #stories #story-grid .story-block .block-category .block-category-icon {
+              width: 20px;
+              height: 20px;
+              margin-top: 10px;
+              margin-left: 10px;
+              margin-right: auto; }
+          body #story-stream #stories #story-grid .story-block:hover {
+            cursor: pointer; }
+          body #story-stream #stories #story-grid .story-block:hover > .block-bg {
             width: 100%;
             height: 100%;
-            background: #96cc97;
-            -webkit-transform: skew(-50deg);
-            -moz-transform: skew(-50deg);
-            -ms-transform: skew(-50deg);
-            -o-transform: skew(-50deg);
-            transform: skew(-50deg);
-            margin-left: 60px;
-            position: absolute; }
-          body #story-stream #stories #story-grid .story-block #block-title-container .block-title {
-            position: absolute;
-            color: white;
-            font-size: 30pt;
-            margin-left: 130px; }
-        body #story-stream #stories #story-grid .story-block:hover {
-          width: 450px;
-          cursor: pointer; }
-        body #story-stream #stories #story-grid .story-block.block-hidden {
-          width: 0px;
-          height: 0px; }
-        body #story-stream #stories #story-grid .story-block.faded {
-          opacity: .6; }
+            opacity: .6; }
+          body #story-stream #stories #story-grid .story-block:hover > .block-title {
+            opacity: 1; }
+          body #story-stream #stories #story-grid .story-block:hover > .block-category {
+            width: 100%; }
+          body #story-stream #stories #story-grid .story-block:hover > .block-category > .block-category-icon {
+            margin-left: auto; }
+          body #story-stream #stories #story-grid .story-block.block-hidden {
+            width: 0px;
+            height: 0px; }
+          body #story-stream #stories #story-grid .story-block.faded {
+            opacity: .6; }

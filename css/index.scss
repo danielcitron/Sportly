@@ -3,6 +3,8 @@
 body {
 	background: #ffffff;
 	overflow-x: hidden;
+	min-width: 730px;
+	max-width: 100%;
 
 	#story-loader {
 		@include transition(top .2s ease);
@@ -240,13 +242,16 @@ body {
 
 		#stories {
 			width: 100%;
-			padding: 50px;
 			background: #000;
 
 			#story-grid {
+				max-width: 1217px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
 
 				#block-story-1 {
-					background: url('../img/blocks/1.jpg');
+					background: url('../img/blocks/1.jpg') center;
 					background-size: cover;
 					background-repeat: no-repeat;
 				}
@@ -314,45 +319,78 @@ body {
 				.story-block {
 					@include transition(all .25s ease);
 					display: inline-block;
-					width: 225px;
-					height: 225px;
-					background: $blue;
-					margin: 1px;
+					width: 300px;
+					height: 300px;
+					background: #000000;
+					margin: 0px;
 					position: relative;
 					overflow: hidden;
+					font-family: BariolThin;
 
-					#block-title-container {
+					.block-title {
 						@include transition(all .25s ease);
-						width: 100%;
-						height: 100px;
-						bottom: -100px;
 						position: absolute;
-						overflow: hidden;
+						text-align: center;
+						width: 90%;
+						height: 100%;
+						color: white;
+						font-size: 25pt;
+						margin: 10px;
+						opacity: 0;
+						z-index: 12;
+						margin-left: 20px;
+						margin-right: 20px;
+						margin-top: 35%;
+					}
 
-						&.title-visible {
-							bottom: 0;
-						}
+					.block-bg {
+						@include transition(all .25s ease);
+						width: 110%;
+						height: 110%;
+						opacity: 1;
+						z-index: 10;
+					}
 
-						.block-title-background {
-							width: 100%;
-							height: 100%;
-							background: $green;
-							@include transform(skew(-50deg));
-							margin-left: 60px;
-							position: absolute;
-						}
+					.block-category {
+						@include transition(all .25s ease);
+						background: white;
+						border-top: 1px solid lighten($lightgray, 30%);
+						width: 13%;
+						height: 13%;
+						position: absolute;
+						bottom:0;
+						left: 0;
+						z-index: 11;
 
-						.block-title {
-							position: absolute;
-							color: white;
-							font-size: 30pt;
-							margin-left: 130px;
+						.block-category-icon {
+							width: 20px;
+							height: 20px;
+							margin-top: 10px;
+							margin-left: 10px; 
+							margin-right: auto;
 						}
 					}
 
 					&:hover {
-						width: 450px;
 						cursor: pointer;
+					}
+
+					&:hover > .block-bg {
+						width: 100%;
+						height: 100%;
+						opacity: .6;
+					}
+
+					&:hover > .block-title {
+						opacity: 1;
+					}
+
+					&:hover > .block-category {
+						width: 100%;
+					}
+
+					&:hover > .block-category >.block-category-icon {
+						margin-left: auto;
 					}
 
 					&.block-hidden {
