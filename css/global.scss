@@ -190,14 +190,19 @@ body {
 //menubar
 
 #menu-bar {
+    @include transition(all .25s ease);
     width: 100%;
-    height: 75px;
+    height: 75px !important;
     background: rgba(255, 255, 255, 0.95);
     position: fixed;
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid lighten($lightgray, 30%);
     @include box-shadow(0px 1px 4px rgba(0,0,0,.2));
+
+    &.expanded {
+        height: 145px;
+    }
 
 
     #logo-container {
@@ -302,6 +307,84 @@ body {
     }
 }
 
+.menu-dropdown {
+    @include transition(all .25s ease);
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 76;
+    padding: 0;
+    list-style-type: none;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+    &.hidden {
+        height: 0px;
+    }
+
+    .logo-dropdown {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        list-style-type: none;
+        padding: 0;
+        margin:0;
+
+        li {
+            display: inline-block;
+            height: 70px;
+            width: 210px;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 1px solid lighten($lightgray, 35%);
+            font-family: BariolThin;
+            font-size: 25pt;
+            color: $darkgray;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            &:hover {
+                background: $orange;
+                color: white;
+                cursor: pointer;
+            }
+
+
+            &:hover > #football {
+                background: url('../img/search/footballw.png') center;
+                background-size: cover;
+            }
+
+            &:hover > .dropdown-sport-logo {
+                opacity: 1;
+                cursor: pointer;
+                @include transform(rotateZ(90deg) scale(1.2));
+            }
+
+            .dropdown-sport-logo {
+                @include transition(all .25s ease);
+                display: inline-block;
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                margin-left: 10px;
+                margin-top: 30px;
+                @include transform(rotateZ(0deg) scale(1));
+            }
+
+            .dropdown-sport-title {
+                margin-top: 20px;
+                margin-left: 40px;
+                display: inline-block;
+                text-align: center
+            }
+        }
+
+    }
+}
+
 #menu-bar-spacer {
     width: 100%;
     height: 75px;
@@ -337,4 +420,42 @@ body {
 
 .text-blue {
     color: darken($blue,20%);
+}
+
+//icons
+
+#soccer {
+    background: url('../img/search/soccer.png') center;
+    background-size: cover;
+}
+
+#basketball {
+    background: url('../img/search/basketball.png') center;
+    background-size: cover;
+}
+
+#football {
+    background: url('../img/search/football.png') center;
+    background-size: cover;
+}
+
+#baseball {
+    background: url('../img/search/baseball.png') center;
+    background-size: cover;
+}
+
+#hockey {
+    background: url('../img/search/hockey.png') center;
+    background-size: cover;
+}
+
+#golf {
+    background: url('../img/search/golf.png') center;
+    background-size: cover;
+}
+
+#swimming {
+    background: url('../img/search/swimming.png') center;
+    background-size: cover;
+    margin-right: 0;
 }
