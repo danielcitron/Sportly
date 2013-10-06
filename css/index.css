@@ -64,7 +64,7 @@ body {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    top: 10px; }
+    top: 2px; }
     #menu-bar #logo-container #logo {
       -webkit-transition: top 0.15s ease;
       -moz-transition: top 0.15s ease;
@@ -85,7 +85,8 @@ body {
     width: 1px;
     background: #9b9b9b;
     height: 20px;
-    display: inline-block; }
+    display: inline-block;
+    margin-top: 30px; }
   #menu-bar #ticker {
     display: inline-block;
     color: #9b9b9b;
@@ -100,7 +101,7 @@ body {
     width: 65px;
     color: #9b9b9b;
     font-size: 10pt;
-    margin-top: 20px;
+    margin-top: 26px;
     padding: 0;
     position: absolute;
     white-space: nowrap;

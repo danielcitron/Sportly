@@ -208,7 +208,7 @@ body {
         position: relative;
         display: inline-block;
         overflow: hidden;
-        top: 10px;
+        top: 2px;
         
         #logo {
             @include transition(top .15s ease);
@@ -232,6 +232,7 @@ body {
         background: $lightgray;
         height: 20px;
         display: inline-block;
+        margin-top: 30px;
     }
 
     #ticker {
@@ -250,7 +251,7 @@ body {
         width: 65px;
         color: $lightgray;
         font-size: 10pt;
-        margin-top: 20px;
+        margin-top: 26px;
         padding: 0;
         position: absolute;
         white-space: nowrap;
