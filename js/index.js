@@ -20,21 +20,4 @@ $( document ).ready(function() {
 		$('#block-title-container').removeClass('title-visible');
 	});
 
-	$('#soccer').click(function() {
-		if ($(this).hasClass("category-selected")){
-			$('#block-story-1').removeClass('block-hidden');
-			$('#block-story-3').removeClass('block-hidden');
-			$('#block-story-4').removeClass('block-hidden');
-			$('#block-story-5').removeClass('block-hidden');
-			$('#soccer').removeClass('category-selected');
-		}
-
-		else
-			$('#block-story-1').addClass('block-hidden');
-			$('#block-story-3').addClass('block-hidden');
-			$('#block-story-4').addClass('block-hidden');
-			$('#block-story-5').addClass('block-hidden');
-			$('#soccer').addClass('category-selected');
-	});
-
 });

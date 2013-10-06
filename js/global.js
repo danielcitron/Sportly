@@ -1,11 +1,20 @@
 $( document ).ready(function() {
 
+	var ticker_counter = 1;
+	$('#ticker').click(function() {
+		ticker_top = (-18 * ticker_counter);
+		$('#ticker-container').css('top', ticker_top);
+		ticker_counter++;
+		if(ticker_counter == 4) {
+			ticker_counter = 1;
+		}
+	});
+
 	$('#menu-bar').mouseover(function() {
 		if ($(".menu-dropdown").hasClass("hidden")){
 			$('.menu-dropdown').removeClass('hidden');
 			$('#menu-bar').addClass('expanded');
 		}
-
 	});
 
 	$('#menu-bar').mouseout(function() {

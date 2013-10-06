@@ -243,11 +243,28 @@ body {
     #ticker {
         display: inline-block;
         color: $lightgray;
-        margin: 0px 35px 0px 35px;
+        margin: 0px 32px 0px 32px;
         position: relative;
-        width: 250px;
+        width: 256px;
         overflow-x: hidden;
         text-overflow: ellipsis;
+        list-style-type: none;
+        height: 18px;
+        overflow: hidden;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        ul {
+            @include transition(top .25s ease);
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            list-style-type: none;
+        }
+
     }
 
     #menu-scores {
@@ -261,8 +278,17 @@ body {
         position: absolute;
         white-space: nowrap;
         right: 5%;
-        overflow-x: hidden;
-        @include transition(width .25s ease);
+        overflow: hidden;
+        height: 28px;
+        @include transition(all .25s ease);
+
+        &:hover > .scores-more {
+            top: 0;
+        }
+
+        &:hover > .score-container {
+            top: -35;
+        }
 
         @media only screen and (min-width : 740px) {
             width: 125px;
@@ -288,9 +314,27 @@ body {
             width: 575px;
         }
 
+        .scores-more {
+            @include transition(all .25s ease);
+            font-family: BariolThin;
+            font-size: 20pt;
+            position: absolute;
+            top:28;
+            text-decoration: none;
+            color: $lightgray;
+
+            &:hover {
+                color: $orange;
+                cursor: pointer;
+            }
+        }
+
         .score-container {
+            @include transition(top .25s ease);
             margin-left: auto;
             margin-right: auto;
+            top: 0;
+            position: absolute;
         }
 
         #score {

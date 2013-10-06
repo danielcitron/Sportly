@@ -97,11 +97,27 @@ body {
   #menu-bar #ticker {
     display: inline-block;
     color: #9b9b9b;
-    margin: 0px 35px 0px 35px;
+    margin: 0px 32px 0px 32px;
     position: relative;
-    width: 250px;
+    width: 256px;
     overflow-x: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    list-style-type: none;
+    height: 18px;
+    overflow: hidden; }
+    #menu-bar #ticker:hover {
+      cursor: pointer; }
+    #menu-bar #ticker ul {
+      -webkit-transition: top 0.25s ease;
+      -moz-transition: top 0.25s ease;
+      -ms-transition: top 0.25s ease;
+      -o-transition: top 0.25s ease;
+      transition: top 0.25s ease;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      list-style-type: none; }
   #menu-bar #menu-scores {
     display: inline-block;
     margin-left: 35px;
@@ -113,12 +129,17 @@ body {
     position: absolute;
     white-space: nowrap;
     right: 5%;
-    overflow-x: hidden;
-    -webkit-transition: width 0.25s ease;
-    -moz-transition: width 0.25s ease;
-    -ms-transition: width 0.25s ease;
-    -o-transition: width 0.25s ease;
-    transition: width 0.25s ease; }
+    overflow: hidden;
+    height: 28px;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease; }
+    #menu-bar #menu-scores:hover > .scores-more {
+      top: 0; }
+    #menu-bar #menu-scores:hover > .score-container {
+      top: -35; }
     @media only screen and (min-width: 740px) {
       #menu-bar #menu-scores {
         width: 125px; } }
@@ -137,9 +158,31 @@ body {
     @media only screen and (min-width: 1190px) {
       #menu-bar #menu-scores {
         width: 575px; } }
+    #menu-bar #menu-scores .scores-more {
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+      font-family: BariolThin;
+      font-size: 20pt;
+      position: absolute;
+      top: 28;
+      text-decoration: none;
+      color: #9b9b9b; }
+      #menu-bar #menu-scores .scores-more:hover {
+        color: #fa4b2a;
+        cursor: pointer; }
     #menu-bar #menu-scores .score-container {
+      -webkit-transition: top 0.25s ease;
+      -moz-transition: top 0.25s ease;
+      -ms-transition: top 0.25s ease;
+      -o-transition: top 0.25s ease;
+      transition: top 0.25s ease;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      top: 0;
+      position: absolute; }
     #menu-bar #menu-scores #score {
       display: inline-block;
       margin-right: 30px; }
