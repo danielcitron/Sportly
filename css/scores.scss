@@ -1,0 +1,162 @@
+@import "global";
+
+.scores-content {
+	margin-top: 80px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
+	.scores-container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.scorebox {
+		float:left;
+		margin: 2%;
+		display: inline-block;
+		width: 300px;
+		height: 400px;
+		@include box-shadow(0px 1px 4px rgba(0,0,0,.2));
+		position: relative;
+		overflow: hidden;
+		background: #000;
+		@include border-radius(7px);
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:hover > .score-text {
+			bottom: 0;
+		}
+
+		&:hover > .score-photo {
+			width: 100%;
+			height: 100%;
+			left: 0;
+			opacity: .7;
+		}
+
+		.score-photo {
+			@include transition(all .5s ease);
+			position: absolute;
+			z-index: 1;
+			width: 120%;
+			height: 120%;
+			left:-10%;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		#photo-1 {
+			background: url('../img/scores/1.jpg');
+			background-size: cover;
+		}
+
+		#photo-2 {
+			background: url('../img/scores/2.jpg');
+			background-size: cover;
+			background-position-x: 80%;
+		}
+
+		#photo-3 {
+			background: url('../img/scores/3.jpg') center;
+			background-size: cover;
+		}
+
+		#photo-4 {
+			background: url('../img/scores/4.jpg');
+			background-size: cover;
+			background-position-x: 22%;
+		}
+
+		.score-text {
+			@include transition(bottom .5s ease);
+			z-index: 2;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: white;
+			bottom: -85%;
+
+			.score-header {
+				width: 80%;
+				height: 15%;
+				margin-left: auto;
+				margin-right: auto;
+				border-bottom: 1px solid lighten($lightgray, 30%);
+
+				.team {
+					display: inline-block;
+					position: absolute;
+					font-family: BariolThin;
+
+					.team-logo {
+						display: inline-block;
+					}
+
+					.team-name {
+						font-size: 12pt;
+						color: $lightgray;
+						position: absolute;
+						top: 10px;
+					}
+
+					.score {
+						position: absolute;
+						font-weight: normal;
+						top: -7;
+						color: $darkergray;
+					}
+
+
+				}
+
+				.team-1 {
+
+					.score {
+						left: 38;
+					}
+					
+				}
+
+				.team-2 {
+					right: 10%;
+
+					.team-name {
+						right: 0;
+					}
+
+					.score {
+						right: 45;
+					}
+				}
+			}
+		}
+
+		.game-title {
+			width: 80%;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 15px;
+			font-weight: normal;
+			font-family: BariolThin;
+			color: $darkgray;
+			font-size: 14pt;
+		}
+
+		.game-summary {
+			font-family: BariolThin;
+			width: 80%;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 15px;
+			color: $lightgray;
+			font-size: 11pt;
+		}
+	}
+
+}

@@ -1,0 +1,444 @@
+@font-face {
+  font-family: 'Bariol';
+  src: url("../fonts/bariol/bariol_regular-webfont.eot");
+  src: url("../fonts/bariol/ bariol_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol/bariol_regular-webfont.woff") format("woff"), url("../fonts/bariol/bariol_regular-webfont.ttf") format("truetype"), url("../fonts/bariol/bariol_regular-webfont.svg#BariolRegularRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BariolBold';
+  src: url("../fonts/bariol/bariol_bold-webfont.eot");
+  src: url("../fonts/bariol/bariol_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol/bariol_bold-webfont.woff") format("woff"), url("../fonts/bariol/bariol_bold-webfont.ttf") format("truetype"), url("../fonts/bariol/bariol_bold-webfont.svg#BariolBoldBold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BariolThin';
+  src: url("../fonts/bariol/bariol_light-webfont.eot");
+  src: url("../fonts/bariol/bariol_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol/bariol_light-webfont.woff") format("woff"), url("../fonts/bariol/bariol_light-webfont.ttf") format("truetype"), url("../fonts/bariol/bariol_light-webfont.svg#BariolLightLight") format("svg");
+  font-weight: thin;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bariol';
+  src: url("../fonts/bariol/bariol_regular-webfont.eot");
+  src: url("../fonts/bariol/bariol_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol/bariol_regular-webfont.woff") format("woff"), url("../fonts/bariol/bariol_regular-webfont.ttf") format("truetype"), url("../fonts/bariol/bariol_regular-webfont.svg#BariolRegularRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: 'Bariol';
+  font-weight: normal;
+  margin: 0; }
+
+.visible {
+  display: block; }
+
+.inline-visible {
+  display: inline-block; }
+
+.hidden {
+  display: none; }
+
+.sticky {
+  position: fixed;
+  top: 75px;
+  border-top: 1px solid #e8e8e8; }
+
+#menu-bar {
+  width: 100%;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e8e8e8;
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2); }
+  #menu-bar #logo-container {
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 175px;
+    height: 24px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    top: 10px; }
+    #menu-bar #logo-container #logo {
+      -webkit-transition: top 0.15s ease;
+      -moz-transition: top 0.15s ease;
+      -ms-transition: top 0.15s ease;
+      -o-transition: top 0.15s ease;
+      transition: top 0.15s ease;
+      width: 125px;
+      height: 48px;
+      background: url("../img/logo.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0; }
+      #menu-bar #logo-container #logo:hover {
+        cursor: pointer;
+        top: -24px; }
+  #menu-bar #menu-border {
+    width: 1px;
+    background: #9b9b9b;
+    height: 20px;
+    display: inline-block; }
+  #menu-bar #ticker {
+    display: inline-block;
+    color: #9b9b9b;
+    margin: 0px 35px 0px 35px;
+    position: relative;
+    width: 250px;
+    overflow-x: hidden;
+    text-overflow: ellipsis; }
+  #menu-bar #menu-scores {
+    display: inline-block;
+    margin-left: 35px;
+    width: 650px;
+    color: #9b9b9b;
+    font-size: 10pt;
+    margin-top: 20px;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    right: 20;
+    overflow-x: hidden; }
+    @media only screen and (min-width: 1230px) {
+      #menu-bar #menu-scores {
+        width: 550px; } }
+    #menu-bar #menu-scores #score {
+      display: inline-block;
+      margin-right: 30px; }
+      #menu-bar #menu-scores #score .team-name {
+        font-family: BariolBold;
+        font-weight: normal;
+        color: #686868; }
+
+#menu-bar-spacer {
+  width: 100%;
+  height: 75px;
+  position: relative; }
+
+.text-white {
+  color: white; }
+
+.text-lightgray {
+  color: #9b9b9b; }
+
+.text-darkgray {
+  color: #6d6e71; }
+
+.text-purple {
+  color: #7880b9; }
+
+.text-yellow {
+  color: #f1c817; }
+
+.text-crimson {
+  color: #ca3756; }
+
+.text-blue {
+  color: #47bee2; }
+
+.hero-img-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 0; }
+  .hero-img-container .hero-img {
+    width: 100%;
+    height: 100%; }
+  .hero-img-container #superbowl {
+    background: url("../img/hero/ravens.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .hero-img-container .hero-title-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: 00px;
+    text-align: center; }
+    .hero-img-container .hero-title-container .hero-header {
+      font-size: 40pt;
+      font-family: BariolThin;
+      background: #7880b9;
+      color: white;
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px; }
+    .hero-img-container .hero-title-container .hero-subheader {
+      font-family: BariolThin;
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 30pt;
+      background: white;
+      color: #7880b9; }
+
+#article {
+  -webkit-transition: top 0.25s ease;
+  -moz-transition: top 0.25s ease;
+  -ms-transition: top 0.25s ease;
+  -o-transition: top 0.25s ease;
+  transition: top 0.25s ease;
+  top: 85%;
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  background: white; }
+  #article .article-header {
+    -webkit-transition: height 0.25s ease;
+    -moz-transition: height 0.25s ease;
+    -ms-transition: height 0.25s ease;
+    -o-transition: height 0.25s ease;
+    transition: height 0.25s ease;
+    position: relative;
+    width: 96%;
+    height: 100px;
+    padding: 30px 2% 0px 2%;
+    background: rgba(255, 255, 255, 0.97);
+    overflow: hidden;
+    z-index: 10; }
+    #article .article-header.stuck {
+      position: fixed;
+      top: 70;
+      border-bottom: 1px solid #dbdbdb;
+      height: 65px; }
+      #article .article-header.stuck:hover {
+        height: 100px; }
+    #article .article-header .header-more {
+      position: absolute;
+      right: 2%;
+      top: 32px;
+      text-align: right; }
+      #article .article-header .header-more .share-article {
+        background: black;
+        height: 23px;
+        width: 78px;
+        right: 0;
+        position: absolute;
+        top: 28px; }
+        #article .article-header .header-more .share-article #facebook {
+          color: #47bee2;
+          width: 24px; }
+          #article .article-header .header-more .share-article #facebook:hover {
+            color: white;
+            background: #47bee2; }
+        #article .article-header .header-more .share-article #twitter {
+          color: #f1c817; }
+          #article .article-header .header-more .share-article #twitter:hover {
+            color: white;
+            background: #f1c817; }
+        #article .article-header .header-more .share-article #googleplus {
+          color: #cc0000; }
+          #article .article-header .header-more .share-article #googleplus:hover {
+            color: white;
+            background: #cc0000; }
+        #article .article-header .header-more .share-article .social-icon {
+          display: inline-block;
+          width: 23px;
+          height: 20px;
+          text-align: center;
+          color: white;
+          padding-top: 3px;
+          position: relative;
+          margin: 0; }
+          #article .article-header .header-more .share-article .social-icon:hover {
+            background: white;
+            cursor: pointer; }
+      #article .article-header .header-more .genre {
+        -webkit-transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        -ms-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+        text-decoration: none;
+        color: white;
+        background: #fb6043;
+        padding: 7px;
+        overflow: hidden;
+        text-overflow: clip;
+        font-family: BariolThin; }
+        #article .article-header .header-more .genre span {
+          display: inline-block; }
+        #article .article-header .header-more .genre .football-icon {
+          width: 12px;
+          height: 12px;
+          background: url("../img/search/footballw.png") center;
+          background-size: cover;
+          margin: 7px 5px 0px 5px; }
+        #article .article-header .header-more .genre:hover {
+          background: #fb755c; }
+    #article .article-header .article-title-container {
+      width: 300px;
+      height: 100px; }
+      #article .article-header .article-title-container a {
+        text-decoration: none; }
+      #article .article-header .article-title-container .article-title {
+        -webkit-transition: background 0.25s ease;
+        -moz-transition: background 0.25s ease;
+        -ms-transition: background 0.25s ease;
+        -o-transition: background 0.25s ease;
+        transition: background 0.25s ease;
+        text-decoration: none;
+        width: 95%;
+        background: #7880b9;
+        color: white;
+        font-family: BariolThin;
+        font-size: 30pt;
+        padding: 5px 0 5px 5%; }
+        #article .article-header .article-title-container .article-title:hover {
+          background: #8990c2; }
+      #article .article-header .article-title-container .article-subheader {
+        color: #7880b9;
+        width: 100%;
+        padding: 5px 0 5px 5%;
+        font-size: 18pt;
+        font-family: BariolThin; }
+  #article .article-content {
+    max-width: 1024px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+  #article h1 {
+    font-family: BariolThin;
+    font-size: 14pt;
+    color: #6d6e71; }
+    #article h1 span {
+      color: #b4b4b4; }
+  #article h2 {
+    font-family: BariolThin;
+    font-weight: normal;
+    font-size: 14pt;
+    color: #6d6e71; }
+    #article h2 span {
+      font-family: BariolThin;
+      font-weight: normal;
+      font-size: 40pt;
+      color: #7880b9;
+      line-height: 14pt; }
+    #article h2 .inline-quote {
+      font-size: 14pt;
+      color: #fa4b2a; }
+  #article h3 {
+    font-size: 23pt;
+    font-family: BariolThin;
+    color: white;
+    text-align: center;
+    padding: 10px 50px 10px 50px;
+    background: #fb6043; }
+    #article h3 span {
+      font-size: 23pt;
+      line-height: 10pt;
+      position: relative;
+      color: white; }
+  #article #body-1-container {
+    position: relative; }
+  #article .article-photo {
+    display: inline-block;
+    width: 47%;
+    height: 90%;
+    position: absolute;
+    margin-top: 43px; }
+  #article .right {
+    right: 0; }
+  #article #photo-1 {
+    background: url("../img/superbowl/1.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 30%; }
+  #article .body-2-container {
+    position: relative; }
+    @media screen and (min-width: 400px) {
+      #article .body-2-container {
+        height: 510px; } }
+    @media screen and (min-width: 650px) {
+      #article .body-2-container {
+        height: 335px; } }
+    @media screen and (min-width: 820px) {
+      #article .body-2-container {
+        height: 255px; } }
+    @media screen and (min-width: 870px) {
+      #article .body-2-container {
+        height: 270px; } }
+    @media screen and (min-width: 1024px) {
+      #article .body-2-container {
+        height: 210px; } }
+    #article .body-2-container .body-2-text {
+      position: relative;
+      width: 100%;
+      height: 250px; }
+    #article .body-2-container h2 {
+      position: absolute;
+      display: inline-block;
+      width: 50%;
+      right: 0; }
+    #article .body-2-container #photo-2 {
+      position: absolute;
+      display: inline-block;
+      background: url("../img/superbowl/2.jpg") center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: 100%;
+      height: 100%;
+      margin-top: 20; }
+  #article #body-1 {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 60px;
+    width: 50%; }
+  #article #body-3 {
+    margin-top: 45px; }
+  #article .full-photo {
+    width: 100%;
+    height: 500px; }
+  #article #photo-4 {
+    background: url("../img/superbowl/4.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 80%; }
+  #article .final-score {
+    width: 40%;
+    padding-left: 5%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto; }
+    #article .final-score .final-number-container {
+      font-family: BariolThin;
+      font-weight: normal;
+      font-size: 80pt;
+      display: inline-block;
+      width: 130px;
+      height: 100px; }
+      #article .final-score .final-number-container .final-number {
+        position: absolute; }
+      #article .final-score .final-number-container #final-ravens {
+        color: #7880b9; }
+      #article .final-score .final-number-container #final-49ers {
+        color: #cc0000;
+        margin-top: 100px; }
+    #article .final-score #container-2 {
+      margin-left: 50px; }
+    #article .final-score .separator-container {
+      display: inline-block;
+      position: relative; }
+      #article .final-score .separator-container .final-separator {
+        top: 0;
+        left: -40;
+        position: absolute;
+        width: 100px;
+        height: 4px;
+        background: #7880b9;
+        -webkit-transform: rotate(-65deg);
+        -moz-transform: rotate(-65deg);
+        -ms-transform: rotate(-65deg);
+        -o-transform: rotate(-65deg);
+        transform: rotate(-65deg); }
+      #article .final-score .separator-container #separator-2 {
+        margin-top: 24px;
+        margin-left: 10px;
+        background: #cc0000; }

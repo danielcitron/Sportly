@@ -1,0 +1,200 @@
+@import "global";
+
+.cover {
+	width: 100%;
+	height: 100%;
+
+	.cover-photo {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		position: fixed;
+		z-index: 1;
+	}
+
+	#cover-ray-lewis {
+		background: url('../img/player/lewis/cover.jpg') center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.cover-footer {
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		background: #ffffff;
+		bottom: 0;
+		z-index: 2;
+		font-family: BariolThin;
+
+		.profile-img {
+			top: -75px;
+			left: 50px;
+			position: absolute;
+			display: inline-block;
+			width: 150px;
+			height: 150px;
+			background: #000;
+			@include border-radius(80px);
+			border: 4px solid #fff;
+			@include box-shadow(0px 1px 4px rgba(0,0,0,.2));
+		}
+
+		#profile-ray-lewis {
+			background: url('../img/player/lewis/profile-img.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position-x: 35%;
+		}
+
+		.title-container {
+			margin-left: 220px;
+			display: inline-block;
+
+			.name {
+				display: inline-block;
+				font-family: BariolThin;
+				color: $darkgray;
+				margin: 10 0 0 0;
+				font-weight: normal;
+			}
+		}
+
+		.detail-container {
+			position: absolute;
+			right: 30px;
+			display: inline-block;
+			top: 20px;
+
+			.team {
+				text-align: center;
+				display: block;
+				margin: 0;
+				color: white;
+				background: $purple;
+				width: 80px;
+				font-size: 14pt;
+			}
+
+			.position {
+				padding-left: 5px;
+				margin-top: 5px;
+				color: $lightgray;
+			}
+
+		}
+	}
+}
+
+.content {
+	z-index: 2;
+	width: 100%;
+	background: #ffffff;
+	position: relative;
+	font-family: BariolThin;
+	padding-bottom: 150px;
+
+	.content-inner {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1024px;
+
+		.intro {
+			padding-top: 10px;
+			color: $darkgray;
+			text-align: center;
+		}
+
+		.stats-container {
+			@include transition(height .6s ease);
+			margin-top: 30px;
+			overflow: hidden;
+			height: 13%;
+
+			&:hover {
+				height: 100%;
+			}
+
+			table {
+				border-collapse:collapse;
+				width: 100%;
+
+				tr {
+					@include transition(background .35s ease);
+					text-align: left;
+					line-height: 30pt;
+					border-bottom: 1px solid lighten($lightgray, 35%);
+
+					&:hover {
+						background: lighten($lightgray, 37%);
+					}
+
+				}
+
+				thead {
+					color: $lightgray;
+					background: white;
+
+					tr {
+						border-bottom: 1px solid $lightgray;
+
+						&:hover {
+							background: #ffffff;
+						}
+
+					}
+				}
+
+				tbody {
+
+					th {
+						color: $darkergray;
+					}
+
+				}
+				td {
+					color: $darkgray;
+				}
+
+			}
+		}
+		.articles {
+			margin-top: 50px;
+			width: 100%;
+			height: 120px;
+			overflow-x: scroll;
+			white-space: nowrap;
+
+			.article:first-child {
+				padding-left: 0px !important;
+			}
+
+			.article {
+				@include transition(background .35s ease);
+				width: 220px;
+				display: inline-block;
+				border-right: 1px solid lighten($lightgray, 30%);
+				padding-right: 20px;
+				white-space: normal;
+				padding-left: 10px;
+
+				&:hover {
+					cursor: pointer;
+					background: lighten($lightgray, 37%);
+				}
+
+				.article-header {
+					font-size: 16pt;
+					color: $darkgray;
+				}
+
+				.article-content {
+					color: $lightgray;
+				}
+
+			}
+		}
+	}
+
+}

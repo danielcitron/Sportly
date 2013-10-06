@@ -1,0 +1,373 @@
+@import "global";
+
+body {
+	background: #ffffff;
+	overflow-x: hidden;
+
+	#story-loader {
+		@include transition(top .2s ease);
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		z-index: 1000;
+		top: 100%;
+
+		#close-button {
+			@include transition(all .25s ease);
+			font-size: 35pt;
+			padding: 0px 0px 5px 40px;
+			color: white;
+			background: $blue;
+
+			&:hover {
+				font-size: 40pt;
+				cursor: pointer;
+			}
+
+		}
+
+		&.story-loading {
+			top: 75px;
+		}
+	}
+
+
+	#hero-nav {
+		width: 100%;
+		height: 500px;
+		background: #000;
+		position: absolute;
+		z-index: 1;
+		overflow-x: hidden;
+
+		#hero-container {
+			
+			.story {
+				@include transition(all .25s ease);
+				width: 100%;
+				height: 100%;
+				
+				&:hover {
+					cursor: pointer;
+					width: 125%;
+				}
+
+				&:hover > .hero-text-container {
+					left: 0%;
+				}
+
+				.hero-text-container {
+					@include transition(all .25s ease);
+					position: absolute;
+					top: 35%;
+					z-index: 1000;
+					opacity: 1;
+					left: -100%;
+
+					.hero-header {
+						font-size: 40pt;
+						color: white;
+						background: $purple;
+						padding: 0px 30px 0px 10px;
+					}
+
+					.hero-subheader {
+						width: 300px;
+						padding: 0px 0px 0px 15px;
+						font-size: 30pt;
+						color: $purple;
+						background: white;
+					}
+				}
+
+				.hero-sub-header {
+
+				}
+			}
+			#story-1 {
+				background: url('../img/hero/ravens.jpg') center;
+				background-size: cover;
+			}
+		}
+
+		.arrow {
+			@include transition(opacity .25s ease);
+			color: white;
+			font-size: 60pt;
+			position: absolute;
+			opacity: .6;
+			top: 45%;
+			z-index: 11;
+
+			&:hover {
+				opacity: 1;
+				cursor: pointer;
+			}
+		}
+
+		#left-arrow {
+			left: 10;
+		}
+
+		#right-arrow {
+			right: 10;
+		}
+
+		#pagination-container {
+
+			width: 110px;
+			height: 12px;
+			position: absolute;
+			bottom: 70;
+			left: 45%;
+			right: auto;
+
+			.pagination-indicator {
+				@include transition(opacity .25s ease);
+				background: url('../img/hero/indicator.png') center;
+				background-size: cover;
+				width: 12px;
+				height: 12px;
+				display: inline-block;
+				margin: 0px 5px 0px 0px;
+			}
+
+			.active {
+				opacity: 1;
+			}
+
+			.inactive {
+				opacity: .6;
+
+				&:hover {
+					opacity: 1;
+					cursor: pointer;
+				}
+			}
+
+		}
+	}
+
+	#story-stream {
+		position: absolute;
+		top: 450px;
+		width: 100%;
+		z-index: 2;
+
+		#search {
+			width: 100%;
+			height: 50px;
+			background: rgba(255, 255, 255, 0.95);
+			z-index: 1100;
+
+			&.stuck {
+				position: fixed;
+				top: 75;
+			}
+
+
+			#search-categories {
+				width: 464px;
+				margin: 0 auto 0 auto;
+
+				.category-icon {
+					@include transition(all .25s ease);
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					margin-top: 18px;
+					margin-right: 50px;
+					opacity: .7;
+					@include transform(rotateZ(0deg) scale(1));
+
+					&:hover {
+						opacity: 1;
+						cursor: pointer;
+						@include transform(rotateZ(90deg) scale(1.2));
+					}
+
+					&.category-selected {
+						opacity: 1;
+						@include transform(rotateZ(90deg) scale(1.2));
+					}
+				}
+
+				#soccer {
+					background: url('../img/search/soccer.png') center;
+					background-size: cover;
+				}
+
+				#basketball {
+					background: url('../img/search/basketball.png') center;
+					background-size: cover;
+				}
+
+				#football {
+					background: url('../img/search/football.png') center;
+					background-size: cover;
+				}
+
+				#baseball {
+					background: url('../img/search/baseball.png') center;
+					background-size: cover;
+				}
+
+				#hockey {
+					background: url('../img/search/hockey.png') center;
+					background-size: cover;
+				}
+
+				#golf {
+					background: url('../img/search/golf.png') center;
+					background-size: cover;
+
+					&:hover {
+						@include transform(rotateZ(0deg) scale(1.2));
+					}
+				}
+
+				#swimming {
+					background: url('../img/search/swimming.png') center;
+					background-size: cover;
+					margin-right: 0;
+				}
+
+			}
+
+		}
+
+		#stories {
+			width: 100%;
+			padding: 50px;
+			background: #000;
+
+			#story-grid {
+
+				#block-story-1 {
+					background: url('../img/blocks/1.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+
+				#block-story-2 {
+					background: url('../img/blocks/2.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+
+				#block-story-3 {
+					background: url('../img/blocks/3.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+
+				#block-story-4 {
+					background: url('../img/blocks/4.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+
+				#block-story-5 {
+					background: url('../img/blocks/5.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+
+				#block-story-5 {
+					background: url('../img/blocks/5.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+
+				#block-story-6 {
+					background: url('../img/blocks/6.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+
+				#block-story-7 {
+					background: url('../img/blocks/7.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+
+				#block-story-8 {
+					background: url('../img/blocks/8.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+
+				#block-story-9 {
+					background: url('../img/blocks/9.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+
+				#block-story-10 {
+					background: url('../img/blocks/5.jpg');
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+
+				.story-block {
+					@include transition(all .25s ease);
+					display: inline-block;
+					width: 225px;
+					height: 225px;
+					background: $blue;
+					margin: 1px;
+					position: relative;
+					overflow: hidden;
+
+					#block-title-container {
+						@include transition(all .25s ease);
+						width: 100%;
+						height: 100px;
+						bottom: -100px;
+						position: absolute;
+						overflow: hidden;
+
+						&.title-visible {
+							bottom: 0;
+						}
+
+						.block-title-background {
+							width: 100%;
+							height: 100%;
+							background: $green;
+							@include transform(skew(-50deg));
+							margin-left: 60px;
+							position: absolute;
+						}
+
+						.block-title {
+							position: absolute;
+							color: white;
+							font-size: 30pt;
+							margin-left: 130px;
+						}
+					}
+
+					&:hover {
+						width: 450px;
+						cursor: pointer;
+					}
+
+					&.block-hidden {
+						width: 0px;
+						height: 0px;
+					}
+
+					&.faded {
+						opacity: .6;
+					}
+				}
+
+			}
+		}
+
+
+	}
+
+}

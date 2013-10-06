@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'Bariol';
+  src: url("../fonts/bariol/bariol_regular-webfont.eot");
+  src: url("../fonts/bariol/ bariol_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol/bariol_regular-webfont.woff") format("woff"), url("../fonts/bariol/bariol_regular-webfont.ttf") format("truetype"), url("../fonts/bariol/bariol_regular-webfont.svg#BariolRegularRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BariolBold';
+  src: url("../fonts/bariol/bariol_bold-webfont.eot");
+  src: url("../fonts/bariol/bariol_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol/bariol_bold-webfont.woff") format("woff"), url("../fonts/bariol/bariol_bold-webfont.ttf") format("truetype"), url("../fonts/bariol/bariol_bold-webfont.svg#BariolBoldBold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BariolThin';
+  src: url("../fonts/bariol/bariol_light-webfont.eot");
+  src: url("../fonts/bariol/bariol_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol/bariol_light-webfont.woff") format("woff"), url("../fonts/bariol/bariol_light-webfont.ttf") format("truetype"), url("../fonts/bariol/bariol_light-webfont.svg#BariolLightLight") format("svg");
+  font-weight: thin;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bariol';
+  src: url("../fonts/bariol/bariol_regular-webfont.eot");
+  src: url("../fonts/bariol/bariol_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bariol/bariol_regular-webfont.woff") format("woff"), url("../fonts/bariol/bariol_regular-webfont.ttf") format("truetype"), url("../fonts/bariol/bariol_regular-webfont.svg#BariolRegularRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: 'Bariol';
+  font-weight: normal;
+  margin: 0; }
+
+.visible {
+  display: block; }
+
+.inline-visible {
+  display: inline-block; }
+
+.hidden {
+  display: none; }
+
+.sticky {
+  position: fixed;
+  top: 75px;
+  border-top: 1px solid #e8e8e8; }
+
+#menu-bar {
+  width: 100%;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e8e8e8;
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2); }
+  #menu-bar #logo-container {
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 175px;
+    height: 24px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    top: 10px; }
+    #menu-bar #logo-container #logo {
+      -webkit-transition: top 0.15s ease;
+      -moz-transition: top 0.15s ease;
+      -ms-transition: top 0.15s ease;
+      -o-transition: top 0.15s ease;
+      transition: top 0.15s ease;
+      width: 125px;
+      height: 48px;
+      background: url("../img/logo.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0; }
+      #menu-bar #logo-container #logo:hover {
+        cursor: pointer;
+        top: -24px; }
+  #menu-bar #menu-border {
+    width: 1px;
+    background: #9b9b9b;
+    height: 20px;
+    display: inline-block; }
+  #menu-bar #ticker {
+    display: inline-block;
+    color: #9b9b9b;
+    margin: 0px 35px 0px 35px;
+    position: relative;
+    width: 250px;
+    overflow-x: hidden;
+    text-overflow: ellipsis; }
+  #menu-bar #menu-scores {
+    display: inline-block;
+    margin-left: 35px;
+    width: 650px;
+    color: #9b9b9b;
+    font-size: 10pt;
+    margin-top: 20px;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    right: 20;
+    overflow-x: hidden; }
+    @media only screen and (min-width: 1230px) {
+      #menu-bar #menu-scores {
+        width: 550px; } }
+    #menu-bar #menu-scores #score {
+      display: inline-block;
+      margin-right: 30px; }
+      #menu-bar #menu-scores #score .team-name {
+        font-family: BariolBold;
+        font-weight: normal;
+        color: #686868; }
+
+#menu-bar-spacer {
+  width: 100%;
+  height: 75px;
+  position: relative; }
+
+.text-white {
+  color: white; }
+
+.text-lightgray {
+  color: #9b9b9b; }
+
+.text-darkgray {
+  color: #6d6e71; }
+
+.text-purple {
+  color: #7880b9; }
+
+.text-yellow {
+  color: #f1c817; }
+
+.text-crimson {
+  color: #ca3756; }
+
+.text-blue {
+  color: #47bee2; }
+
+.scores-content {
+  margin-top: 80px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .scores-content .scores-container {
+    margin-left: auto;
+    margin-right: auto; }
+  .scores-content .scorebox {
+    float: left;
+    margin: 2%;
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px; }
+    .scores-content .scorebox:hover {
+      cursor: pointer; }
+    .scores-content .scorebox:hover > .score-text {
+      bottom: 0; }
+    .scores-content .scorebox:hover > .score-photo {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      opacity: .7; }
+    .scores-content .scorebox .score-photo {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      position: absolute;
+      z-index: 1;
+      width: 120%;
+      height: 120%;
+      left: -10%;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .scores-content .scorebox #photo-1 {
+      background: url("../img/scores/1.jpg");
+      background-size: cover; }
+    .scores-content .scorebox #photo-2 {
+      background: url("../img/scores/2.jpg");
+      background-size: cover;
+      background-position-x: 80%; }
+    .scores-content .scorebox #photo-3 {
+      background: url("../img/scores/3.jpg") center;
+      background-size: cover; }
+    .scores-content .scorebox #photo-4 {
+      background: url("../img/scores/4.jpg");
+      background-size: cover;
+      background-position-x: 22%; }
+    .scores-content .scorebox .score-text {
+      -webkit-transition: bottom 0.5s ease;
+      -moz-transition: bottom 0.5s ease;
+      -ms-transition: bottom 0.5s ease;
+      -o-transition: bottom 0.5s ease;
+      transition: bottom 0.5s ease;
+      z-index: 2;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: white;
+      bottom: -85%; }
+      .scores-content .scorebox .score-text .score-header {
+        width: 80%;
+        height: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid #e8e8e8; }
+        .scores-content .scorebox .score-text .score-header .team {
+          display: inline-block;
+          position: absolute;
+          font-family: BariolThin; }
+          .scores-content .scorebox .score-text .score-header .team .team-logo {
+            display: inline-block; }
+          .scores-content .scorebox .score-text .score-header .team .team-name {
+            font-size: 12pt;
+            color: #9b9b9b;
+            position: absolute;
+            top: 10px; }
+          .scores-content .scorebox .score-text .score-header .team .score {
+            position: absolute;
+            font-weight: normal;
+            top: -7;
+            color: #383a3b; }
+        .scores-content .scorebox .score-text .score-header .team-1 .score {
+          left: 38; }
+        .scores-content .scorebox .score-text .score-header .team-2 {
+          right: 10%; }
+          .scores-content .scorebox .score-text .score-header .team-2 .team-name {
+            right: 0; }
+          .scores-content .scorebox .score-text .score-header .team-2 .score {
+            right: 45; }
+    .scores-content .scorebox .game-title {
+      width: 80%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      font-weight: normal;
+      font-family: BariolThin;
+      color: #6d6e71;
+      font-size: 14pt; }
+    .scores-content .scorebox .game-summary {
+      font-family: BariolThin;
+      width: 80%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      color: #9b9b9b;
+      font-size: 11pt; }

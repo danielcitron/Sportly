@@ -1,0 +1,414 @@
+@import "global";
+
+.hero-img-container {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 0;
+
+	.hero-img {
+		width: 100%;
+		height: 100%;
+	}
+
+	#superbowl {
+		background: url('../img/hero/ravens.jpg') center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.hero-title-container {
+		display: none;
+		position: absolute;
+		width: 100%;
+		bottom: 00px;
+		text-align: center;
+
+		.hero-header{
+			font-size: 40pt;
+			font-family: BariolThin;
+			background: $purple;
+			color: white;
+			width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 5px;
+		}
+
+		.hero-subheader {
+			font-family: BariolThin;
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 30pt;
+			background: white;
+			color: $purple;
+		}
+
+	}
+
+}
+
+#article {
+	@include transition(top .25s ease);
+	top: 85%;
+	z-index: 2;
+	width: 100%;
+	position: absolute;
+	background: white;
+
+
+	.article-header {
+		@include transition(height .25s ease);
+		position: relative;
+		width: 96%;
+		height: 100px;
+		padding: 30px 2% 0px 2%;
+		background: rgba(255, 255, 255, 0.97);
+		overflow: hidden;
+		z-index: 10;
+
+		&.stuck {
+			position: fixed;
+			top: 70;
+			border-bottom: 1px solid lighten($lightgray, 25%);
+			height: 65px;
+
+			&:hover {
+				height: 100px;
+			}
+		}
+
+
+		.header-more {
+			position: absolute;
+			right: 2%;
+			top: 32px;
+			text-align: right;
+
+			.share-article {
+				background: black;
+				height: 23px;
+				width: 78px;
+				right: 0;
+				position: absolute;
+				top: 28px;
+
+				#facebook {
+					color: darken($blue, 20%);
+					width: 24px;
+
+					&:hover {
+						color: white;
+						background: darken($blue, 20%);
+					}
+				}
+
+				#twitter {
+					color: $yellow;
+
+					&:hover {
+						color: white;
+						background: $yellow;
+					}
+				}
+				
+				#googleplus {
+					color: $red;
+
+					&:hover {
+						color: white;
+						background: $red;
+					}
+				}
+
+				.social-icon {
+					display: inline-block;
+					width: 23px;
+					height: 20px;
+					text-align: center;
+					color: white;
+					padding-top: 3px;
+					position: relative;
+					margin: 0;
+
+					&:hover {
+						background: white;
+						cursor: pointer;
+					}
+				}
+			}
+
+			.genre {
+				@include transition(all .25s ease);
+				text-decoration: none;
+				color: white;
+				background: lighten($orange, 5%);
+				padding: 7px;
+				overflow: hidden;
+				text-overflow: clip;
+				font-family: BariolThin;
+
+				span {
+					display:inline-block;
+				}
+
+				.football-icon {
+					width: 12px;
+					height: 12px;
+					background: url('../img/search/footballw.png') center;
+					background-size: cover;
+					margin: 7px 5px 0px 5px;
+				}
+
+				&:hover {
+					background: lighten($orange, 10%);
+				}
+			}
+
+		
+		}
+
+		.article-title-container {
+			width: 300px;
+			height: 100px;
+
+			a {
+				text-decoration: none;
+			}
+			.article-title {
+				@include transition(background .25s ease);
+				text-decoration: none;
+				width: 95%;
+				background: $purple;
+				color: white;
+				font-family: BariolThin;
+				font-size: 30pt;
+				padding: 5px 0 5px 5%;
+
+				&:hover {
+					background: lighten($purple, 5%);
+				}
+			}
+
+			.article-subheader {
+				color: $purple;
+				width: 100%;
+				padding: 5px 0 5px 5%;
+				font-size: 18pt;
+				font-family: BariolThin;
+			}
+
+		}
+
+	}
+
+	.article-content {
+		max-width: 1024px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	h1 {
+		font-family: BariolThin;
+		font-size: 14pt;
+		color: $darkgray;
+
+		span {
+			color: lighten($lightgray, 10%);
+		}
+	}
+
+	h2 {
+		font-family: BariolThin;
+		font-weight: normal;
+		font-size: 14pt;
+		color: $darkgray;
+
+		span {
+			font-family: BariolThin;
+			font-weight: normal;
+			font-size: 40pt;
+			color: $purple;
+			line-height: 14pt;
+		}
+
+		.inline-quote {
+			font-size: 14pt;
+			color: $orange;
+		}
+	}
+
+	h3 {
+		font-size: 23pt;
+		font-family: BariolThin;
+		color: white;
+		text-align: center;
+		padding: 10px 50px 10px 50px;
+		background: lighten($orange, 5%);
+
+		span {
+			font-size: 23pt;
+			line-height: 10pt;
+			position: relative;
+			color: white;
+		}
+
+	}
+
+	#body-1-container {
+		position: relative;
+	}
+
+	.article-photo {
+		display: inline-block;
+		width: 47%;
+		height: 90%;
+		position: absolute;
+		margin-top: 43px;
+	}
+
+	.right {
+		right: 0;
+	}
+
+	#photo-1 {
+		background: url('../img/superbowl/1.jpg') center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-y: 30%;
+	}
+
+
+
+	.body-2-container {
+		position: relative;
+
+		@media screen and (min-width: 400px) {
+			height: 510px;
+		}
+
+		@media screen and (min-width: 650px) {
+			height: 335px;
+		}
+
+		@media screen and (min-width: 820px) {
+			height: 255px;
+		}
+
+		@media screen and (min-width: 870px) {
+			height: 270px;
+		}
+
+		@media screen and (min-width: 1024px) {
+			height: 210px;
+		}
+
+		.body-2-text {
+			position: relative;
+			width: 100%;
+			height: 250px;
+		}
+
+		h2 {
+			position: absolute;
+			display: inline-block;
+			width: 50%;
+			right: 0;
+		}
+
+		#photo-2 {
+			position: absolute;
+			display: inline-block;
+			background: url('../img/superbowl/2.jpg') center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position-y: 100%;
+			height: 100%;
+			margin-top: 20;
+		}
+
+	}
+	#body-1 {
+		display: inline-block;
+		margin-top: 30px;
+		margin-right: 60px;
+		width: 50%;
+	}
+
+	#body-3 {
+		margin-top: 45px;
+	}
+
+	.full-photo {
+		width: 100%;
+		height: 500px;
+	}
+
+	#photo-4 {
+		background: url('../img/superbowl/4.jpg') center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-y: 80%;
+	}
+
+	.final-score {
+		width:40%;
+		padding-left: 5%;
+		height: 250px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.final-number-container {
+			font-family: BariolThin;
+			font-weight: normal;
+			font-size: 80pt;
+			display: inline-block;
+			width: 130px;
+			height: 100px;
+
+			.final-number {
+				position: absolute;
+			}
+
+			#final-ravens {
+				color: $purple;
+			}
+
+			#final-49ers {
+				color: $red;
+				margin-top: 100px;
+			}
+
+		}
+
+		#container-2 {
+			margin-left: 50px;
+		}
+
+		.separator-container {
+			display: inline-block;
+			position: relative;
+
+			.final-separator {
+				top: 0;
+				left: -40;
+				position: absolute;
+				width: 100px;
+				height: 4px;
+				background: $purple;
+				@include transform(rotate(-65deg));
+			}
+
+			#separator-2 {
+				margin-top: 24px;
+				margin-left: 10px;
+				background: $red;
+			}
+		}
+
+	}
+
+}
