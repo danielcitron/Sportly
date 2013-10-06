@@ -182,7 +182,7 @@ body {
 			&:hover > .caption-decoration {
 				@include transform(rotate(0deg));
 				opacity: 1;
-				top: 40%;
+				top: 34%;
 			}
 
 			.caption-decoration {
@@ -192,7 +192,7 @@ body {
 				height: 120px;
 				background: $orange;
 				position: absolute;
-				top: 35%;
+				top: 50%;
 				@include transform(rotate(-100deg));
 				right: -100%;
 				opacity: 0;
@@ -204,11 +204,12 @@ body {
 				color: white;
 				width: 100%;
 				position: absolute;
-				top: 50%;
+				top: 40%;
 				text-align: center;
-				font-size: 25pt;
+				font-size: 20pt;
 				@include transform(scale(1.3));
 				opacity: 0;
+				font-family: BariolThin;
 			}
 
 			.block-pic {
@@ -220,25 +221,25 @@ body {
 			}
 
 			#block-1 {
-				background: url('../img/blocks/1.jpg') center;
+				background: url('../img/football/1.jpg') center;
 				background-size: cover;
 				background-repeat: no-repeat;
 			}
 
 			#block-2 {
-				background: url('../img/blocks/2.jpg') center;
+				background: url('../img/football/2.jpg') center;
 				background-size: cover;
 				background-repeat: no-repeat;
 			}
 
 			#block-3 {
-				background: url('../img/blocks/3.jpg') center;
+				background: url('../img/football/3.jpg') center;
 				background-size: cover;
 				background-repeat: no-repeat;
 			}
 
 			#block-4 {
-				background: url('../img/blocks/4.jpg') center;
+				background: url('../img/football/4.jpg') center;
 				background-size: cover;
 				background-repeat: no-repeat;
 			}
@@ -282,6 +283,10 @@ body {
 				top: 45%;
 			}
 
+			.caption {
+				top: 47%;
+			}
+
 		}
 
 		.landscape {
@@ -289,6 +294,10 @@ body {
 
 			&:hover > .caption-decoration {
 				top: 30%;
+			}
+
+			.caption {
+				top: 40%;
 			}
 
 		}

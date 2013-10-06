@@ -272,6 +272,13 @@ body {
   height: 75px;
   position: relative; }
 
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: white; }
+
 .text-white {
   color: white; }
 
@@ -453,7 +460,7 @@ body {
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
         opacity: 1;
-        top: 40%; }
+        top: 34%; }
       #stream #stream-content .block .caption-decoration {
         -webkit-transition: all 0.25s ease;
         -moz-transition: all 0.25s ease;
@@ -465,7 +472,7 @@ body {
         height: 120px;
         background: #fa4b2a;
         position: absolute;
-        top: 35%;
+        top: 50%;
         -webkit-transform: rotate(-100deg);
         -moz-transform: rotate(-100deg);
         -ms-transform: rotate(-100deg);
@@ -483,15 +490,16 @@ body {
         color: white;
         width: 100%;
         position: absolute;
-        top: 50%;
+        top: 40%;
         text-align: center;
-        font-size: 25pt;
+        font-size: 20pt;
         -webkit-transform: scale(1.3);
         -moz-transform: scale(1.3);
         -ms-transform: scale(1.3);
         -o-transform: scale(1.3);
         transform: scale(1.3);
-        opacity: 0; }
+        opacity: 0;
+        font-family: BariolThin; }
       #stream #stream-content .block .block-pic {
         -webkit-transition: all 0.25s ease;
         -moz-transition: all 0.25s ease;
@@ -503,19 +511,19 @@ body {
         background-size: cover;
         background-repeat: no-repeat; }
       #stream #stream-content .block #block-1 {
-        background: url("../img/blocks/1.jpg") center;
+        background: url("../img/football/1.jpg") center;
         background-size: cover;
         background-repeat: no-repeat; }
       #stream #stream-content .block #block-2 {
-        background: url("../img/blocks/2.jpg") center;
+        background: url("../img/football/2.jpg") center;
         background-size: cover;
         background-repeat: no-repeat; }
       #stream #stream-content .block #block-3 {
-        background: url("../img/blocks/3.jpg") center;
+        background: url("../img/football/3.jpg") center;
         background-size: cover;
         background-repeat: no-repeat; }
       #stream #stream-content .block #block-4 {
-        background: url("../img/blocks/4.jpg") center;
+        background: url("../img/football/4.jpg") center;
         background-size: cover;
         background-repeat: no-repeat; }
       #stream #stream-content .block #block-5 {
@@ -542,10 +550,14 @@ body {
       height: 500px; }
       #stream #stream-content .portrait:hover > .caption-decoration {
         top: 45%; }
+      #stream #stream-content .portrait .caption {
+        top: 47%; }
     #stream #stream-content .landscape {
       width: 500px; }
       #stream #stream-content .landscape:hover > .caption-decoration {
         top: 30%; }
+      #stream #stream-content .landscape .caption {
+        top: 40%; }
 
 .grid {
   max-width: 69em;
