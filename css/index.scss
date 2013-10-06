@@ -99,6 +99,7 @@ body {
 			opacity: .6;
 			top: 45%;
 			z-index: 11;
+			display: none;
 
 			&:hover {
 				opacity: 1;
@@ -115,7 +116,7 @@ body {
 		}
 
 		#pagination-container {
-
+			display: none;
 			width: 110px;
 			height: 12px;
 			position: absolute;
