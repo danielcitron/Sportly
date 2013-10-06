@@ -247,18 +247,44 @@ body {
     #menu-scores {
         display: inline-block;
         margin-left: 35px;
-        width: 650px;
+        width: 65px;
         color: $lightgray;
         font-size: 10pt;
         margin-top: 20px;
         padding: 0;
         position: absolute;
         white-space: nowrap;
-        right: 20;
+        right: 5%;
         overflow-x: hidden;
+        @include transition(width .25s ease);
 
-        @media only screen and (min-width : 1230px) {
-            width: 550px;
+        @media only screen and (min-width : 740px) {
+            width: 125px;
+        }
+
+        @media only screen and (min-width : 780px) {
+            width: 185px;
+        }
+
+        @media only screen and (min-width : 850px) {
+            width: 260px;
+        }
+
+        @media only screen and (min-width : 950px) {
+            width: 350px;
+        }
+
+        @media only screen and (min-width : 1080px) {
+            width: 475px;
+        }
+
+        @media only screen and (min-width : 1190px) {
+            width: 575px;
+        }
+
+        .score-container {
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #score {

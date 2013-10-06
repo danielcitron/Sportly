@@ -97,18 +97,41 @@ body {
   #menu-bar #menu-scores {
     display: inline-block;
     margin-left: 35px;
-    width: 650px;
+    width: 65px;
     color: #9b9b9b;
     font-size: 10pt;
     margin-top: 20px;
     padding: 0;
     position: absolute;
     white-space: nowrap;
-    right: 20;
-    overflow-x: hidden; }
-    @media only screen and (min-width: 1230px) {
+    right: 5%;
+    overflow-x: hidden;
+    -webkit-transition: width 0.25s ease;
+    -moz-transition: width 0.25s ease;
+    -ms-transition: width 0.25s ease;
+    -o-transition: width 0.25s ease;
+    transition: width 0.25s ease; }
+    @media only screen and (min-width: 740px) {
       #menu-bar #menu-scores {
-        width: 550px; } }
+        width: 125px; } }
+    @media only screen and (min-width: 780px) {
+      #menu-bar #menu-scores {
+        width: 185px; } }
+    @media only screen and (min-width: 850px) {
+      #menu-bar #menu-scores {
+        width: 260px; } }
+    @media only screen and (min-width: 950px) {
+      #menu-bar #menu-scores {
+        width: 350px; } }
+    @media only screen and (min-width: 1080px) {
+      #menu-bar #menu-scores {
+        width: 475px; } }
+    @media only screen and (min-width: 1190px) {
+      #menu-bar #menu-scores {
+        width: 575px; } }
+    #menu-bar #menu-scores .score-container {
+      margin-left: auto;
+      margin-right: auto; }
     #menu-bar #menu-scores #score {
       display: inline-block;
       margin-right: 30px; }
