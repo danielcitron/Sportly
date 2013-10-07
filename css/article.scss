@@ -156,7 +156,6 @@
 				.football-icon {
 					width: 12px;
 					height: 12px;
-					background: url('../img/search/footballw.png') center;
 					background-size: cover;
 					margin: 7px 5px 0px 5px;
 				}
@@ -260,6 +259,47 @@
 
 	#body-1-container {
 		position: relative;
+	}
+
+	#body-1-2-container {
+		width: 100%;
+		position: relative;
+
+		h2 {
+			width: 60%;
+			display: inline-block;
+		}
+
+		.article-ad {
+			position: absolute;
+			display: inline-block;
+			width: 37%;
+			margin-left: 3%;
+			height: 97%;
+			background: $blue;
+			border: 1px solid $darkgray;
+			background: url('../img/superbowl/ad.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position-x: 0%;
+
+			.ad-logo {
+				width: 40px;
+				height: 40px;
+				background: white;
+				color: $lightgray;
+				position: absolute;
+				z-index: 10;
+				bottom: 0;
+				left: 0;
+
+				.ad-text {
+					margin: 11px;
+				}
+			}
+
+		}
+
 	}
 
 	.article-photo {

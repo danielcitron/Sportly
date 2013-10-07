@@ -545,7 +545,6 @@ body {
         #article .article-header .header-more .genre .football-icon {
           width: 12px;
           height: 12px;
-          background: url("../img/search/footballw.png") center;
           background-size: cover;
           margin: 7px 5px 0px 5px; }
         #article .article-header .header-more .genre:hover {
@@ -615,6 +614,35 @@ body {
       color: white; }
   #article #body-1-container {
     position: relative; }
+  #article #body-1-2-container {
+    width: 100%;
+    position: relative; }
+    #article #body-1-2-container h2 {
+      width: 60%;
+      display: inline-block; }
+    #article #body-1-2-container .article-ad {
+      position: absolute;
+      display: inline-block;
+      width: 37%;
+      margin-left: 3%;
+      height: 97%;
+      background: #9fddf0;
+      border: 1px solid #6d6e71;
+      background: url("../img/superbowl/ad.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: 0%; }
+      #article #body-1-2-container .article-ad .ad-logo {
+        width: 40px;
+        height: 40px;
+        background: white;
+        color: #9b9b9b;
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        left: 0; }
+        #article #body-1-2-container .article-ad .ad-logo .ad-text {
+          margin: 11px; }
   #article .article-photo {
     display: inline-block;
     width: 47%;
