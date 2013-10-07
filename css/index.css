@@ -586,7 +586,14 @@ body {
         max-width: 1217px;
         margin-left: auto;
         margin-right: auto;
-        display: block; }
+        display: block;
+        width: 606px; }
+        @media only screen and (min-width: 909px) {
+          body #story-stream #stories #story-grid {
+            width: 909px; } }
+        @media only screen and (min-width: 1217px) {
+          body #story-stream #stories #story-grid {
+            width: 1217px; } }
         body #story-stream #stories #story-grid #block-story-1 {
           background: url("../img/blocks/1.jpg") center;
           background-size: cover;
