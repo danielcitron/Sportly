@@ -527,6 +527,59 @@ body {
     color: darken($blue,20%);
 }
 
+.text-orange {
+    color: $orange;
+}
+
+
+//backgrounds
+
+.bg-orange {
+    background: $orange;
+}
+
+.bg-lightorange {
+    background: lighten($orange, 10%);
+}
+
+.bg-green {
+    background: darken($green, 10%);
+}
+
+.bg-blue {
+    background: #6378E4;
+}
+
+.bg-darkblue {
+    background: darken($blue, 25%);
+}
+
+.bg-white {
+    background: white;
+}
+
+.bg-lightgray {
+    background: $lightgray;
+}
+
+.bg-darkgray {
+    background: $darkgray;
+}
+
+.bg-purple {
+    background: $purple;
+}
+
+.bg-yellow {
+    background: $yellow;
+}
+
+.bg-crimson {
+    background: lighten(#A32B44, 10%);
+}
+
+
+
 //icons
 
 #soccer {

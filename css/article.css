@@ -355,6 +355,42 @@ body {
 .text-blue {
   color: #47bee2; }
 
+.text-orange {
+  color: #fa4b2a; }
+
+.bg-orange {
+  background: #fa4b2a; }
+
+.bg-lightorange {
+  background: #fb755c; }
+
+.bg-green {
+  background: #74bb75; }
+
+.bg-blue {
+  background: #6378E4; }
+
+.bg-darkblue {
+  background: #31b6df; }
+
+.bg-white {
+  background: white; }
+
+.bg-lightgray {
+  background: #9b9b9b; }
+
+.bg-darkgray {
+  background: #6d6e71; }
+
+.bg-purple {
+  background: #7880b9; }
+
+.bg-yellow {
+  background: #f1c817; }
+
+.bg-crimson {
+  background: #ca3756; }
+
 #soccer {
   background: url("../img/icons/black/soccer.png") center;
   background-size: cover; }
