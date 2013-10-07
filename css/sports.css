@@ -629,7 +629,9 @@ body {
         font-family: BariolThin;
         padding-top: 10px;
         margin-left: auto;
-        margin-right: auto; }
+        margin-right: auto;
+        width: 100%;
+        z-index: 100; }
         #stream #stream-content .block .tag-container .first {
           margin-left: 10px; }
         #stream #stream-content .block .tag-container .tag {
