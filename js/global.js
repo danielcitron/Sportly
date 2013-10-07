@@ -29,7 +29,7 @@ $( document ).ready(function() {
 		});
 	}, 1500);
 
-	$('#menu-bar').mouseenter(function() {
+/*	$('#menu-bar').mouseenter(function() {
 		if (!$("#menu-bar").hasClass("expanded")){
 			$('#menu-bar').addClass('expanded');
 		}
@@ -39,7 +39,7 @@ $( document ).ready(function() {
 		if ($("#menu-bar").hasClass("expanded")){
 			$('#menu-bar').removeClass('expanded');
 		}
-	});
+	}); */
 
 	
 	//scrollers for dropdown menu

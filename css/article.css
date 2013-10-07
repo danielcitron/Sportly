@@ -54,7 +54,7 @@ body {
   transition: all 0.25s ease;
   border-top: 3px solid #fa4b2a;
   width: 100%;
-  height: 75px;
+  height: 145px;
   background: rgba(255, 255, 255, 0.97);
   position: fixed;
   top: 0;
@@ -275,6 +275,18 @@ body {
       padding-right: 55px; }
     .menu-dropdown .logo-dropdown #dropdown-football {
       padding-left: 55px; }
+    .menu-dropdown .logo-dropdown #dropdown-basketball .dropdown-sport-logo {
+      margin-left: 0px; }
+    .menu-dropdown .logo-dropdown #dropdown-basketball .dropdown-sport-title {
+      margin-left: 25px; }
+    .menu-dropdown .logo-dropdown #dropdown-hockey .dropdown-sport-logo {
+      margin-left: 18px; }
+    .menu-dropdown .logo-dropdown #dropdown-hockey .dropdown-sport-title {
+      margin-left: 45px; }
+    .menu-dropdown .logo-dropdown #dropdown-golf .dropdown-sport-logo {
+      margin-left: 30px; }
+    .menu-dropdown .logo-dropdown #dropdown-golf .dropdown-sport-title {
+      margin-left: 65px; }
     .menu-dropdown .logo-dropdown li {
       display: inline-block;
       height: 70px;
