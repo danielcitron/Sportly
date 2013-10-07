@@ -556,7 +556,7 @@ body {
         transition: all 0.25s;
         z-index: 10;
         color: white;
-        width: 100%;
+        width: 90%;
         position: absolute;
         top: 40%;
         text-align: center;
@@ -567,7 +567,10 @@ body {
         -o-transform: scale(1.3);
         transform: scale(1.3);
         opacity: 0;
-        font-family: BariolThin; }
+        font-family: BariolThin;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px; }
       #stream #stream-content .block .block-pic {
         -webkit-transition: all 0.25s ease;
         -moz-transition: all 0.25s ease;
@@ -634,4 +637,5 @@ body {
       #stream #stream-content .landscape:hover > .caption-decoration {
         top: 30%; }
       #stream #stream-content .landscape .caption {
-        top: 40%; }
+        top: 35%;
+        padding-left: 20px; }
