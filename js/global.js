@@ -10,16 +10,14 @@ $( document ).ready(function() {
 		}
 	});
 
-	$('#menu-bar').mouseover(function() {
-		if ($(".menu-dropdown").hasClass("hidden")){
-			$('.menu-dropdown').removeClass('hidden');
+	$('#menu-bar').mouseenter(function() {
+		if (!$("#menu-bar").hasClass("expanded")){
 			$('#menu-bar').addClass('expanded');
 		}
 	});
 
-	$('#menu-bar').mouseout(function() {
-		if (!$(".menu-dropdown").hasClass("hidden")){
-			$('.menu-dropdown').addClass('hidden');
+	$('#menu-bar').mouseleave(function() {
+		if ($("#menu-bar").hasClass("expanded")){
 			$('#menu-bar').removeClass('expanded');
 		}
 	});
