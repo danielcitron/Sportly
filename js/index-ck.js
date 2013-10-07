@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#search").waypoint("sticky",{offset:75})});
+$(document).ready(function(){$("#stories-header").waypoint("sticky",{offset:145})});

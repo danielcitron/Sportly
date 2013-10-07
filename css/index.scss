@@ -160,85 +160,53 @@ body {
 		z-index: 2;
 		padding-bottom: 50px;
 
-		#search {
-			display: none;
+		#stories-header {
 			width: 100%;
 			height: 50px;
 			background: rgba(255, 255, 255, 1);
 			z-index: 1100;
+			overflow: hidden;
 
 			&.stuck {
 				position: fixed;
-				top: 75;
+				top:149px;
 			}
 
+			a {
+				text-decoration: none;
+				height: 100%;
+			}
 
-			#search-categories {
-				width: 464px;
-				margin: 0 auto 0 auto;
+			h1 {
+				display: inline-block;
+				background: white;
+				font-family: BariolThin;
+				line-height: 40pt;
+				font-size: 30pt;
+				color: white;
+				width: 300px;
+				text-align: left;
+				position: relative;
+				height: 100%;
+				background: $orange;
+				margin: 0 0 0 0;
+				padding-left: 30px;
 
-				.category-icon {
-					@include transition(all .25s ease);
-					display: inline-block;
-					width: 20px;
-					height: 20px;
-					margin-top: 18px;
-					margin-right: 50px;
-					opacity: .7;
-					@include transform(rotateZ(0deg) scale(1));
-
-					&:hover {
-						opacity: 1;
-						cursor: pointer;
-						@include transform(rotateZ(90deg) scale(1.2));
-					}
-
-					&.category-selected {
-						opacity: 1;
-						@include transform(rotateZ(90deg) scale(1.2));
-					}
+				&:hover {
+					background: darken($orange, 10%);
 				}
+			}
 
-				#soccer {
-					background: url('../img/search/soccer.png') center;
-					background-size: cover;
+			.big-headline {
+				color: $darkergray;
+				font-family: BariolThin;
+				font-weight: normal;
+				font-size: 22pt;
+				margin-left: 5%;
+
+				&:hover {
+					color: $orange;
 				}
-
-				#basketball {
-					background: url('../img/search/basketball.png') center;
-					background-size: cover;
-				}
-
-				#football {
-					background: url('../img/search/football.png') center;
-					background-size: cover;
-				}
-
-				#baseball {
-					background: url('../img/search/baseball.png') center;
-					background-size: cover;
-				}
-
-				#hockey {
-					background: url('../img/search/hockey.png') center;
-					background-size: cover;
-				}
-
-				#golf {
-					background: url('../img/search/golf.png') center;
-					background-size: cover;
-
-					&:hover {
-						@include transform(rotateZ(0deg) scale(1.2));
-					}
-				}
-
-				#swimming {
-					background: url('../img/search/swimming.png') center;
-					background-size: cover;
-					margin-right: 0;
-				}
-
 			}
 
 		}

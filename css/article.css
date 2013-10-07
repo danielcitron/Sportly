@@ -460,6 +460,14 @@ body {
         cursor: pointer;
         top: -24px; }
 
+::selection {
+  background: #fa4b2a;
+  color: white; }
+
+::-moz-selection {
+  background: #fa4b2a;
+  color: white; }
+
 .hero-img-container {
   width: 100%;
   height: 100%;
