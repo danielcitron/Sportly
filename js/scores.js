@@ -5,9 +5,9 @@ $( document ).ready(function() {
 		$(this).parent().find('.score-photo').addClass('closed');
 	});
 
-	$('.score-text').mouseout(function() {
-		$(this).removeClass('open');
-		$(this).parent().find('.score-photo').removeClass('closed');
+	$('.scorebox').mouseout(function() {
+		$(this).find('.score-text').removeClass('open');
+		$(this).find('.score-photo').removeClass('closed');
 	});
 	
 });
