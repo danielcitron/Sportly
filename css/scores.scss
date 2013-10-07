@@ -71,6 +71,26 @@
 			background-position-x: 22%;
 		}
 
+		#photo-5 {
+			background: url('../img/scores/5.jpg') center;
+			background-size: cover;
+		}
+
+		#photo-6 {
+			background: url('../img/scores/6.jpg') center;
+			background-size: cover;
+		}
+
+		#photo-7 {
+			background: url('../img/scores/7.jpg') center;
+			background-size: cover;
+		}
+
+		#photo-8 {
+			background: url('../img/scores/8.jpg') center;
+			background-size: cover;
+		}
+
 		.score-text {
 			@include transition(bottom .5s ease);
 			z-index: 2;

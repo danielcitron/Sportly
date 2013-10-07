@@ -388,6 +388,18 @@ body {
       background: url("../img/scores/4.jpg");
       background-size: cover;
       background-position-x: 22%; }
+    .scores-content .scorebox #photo-5 {
+      background: url("../img/scores/5.jpg") center;
+      background-size: cover; }
+    .scores-content .scorebox #photo-6 {
+      background: url("../img/scores/6.jpg") center;
+      background-size: cover; }
+    .scores-content .scorebox #photo-7 {
+      background: url("../img/scores/7.jpg") center;
+      background-size: cover; }
+    .scores-content .scorebox #photo-8 {
+      background: url("../img/scores/8.jpg") center;
+      background-size: cover; }
     .scores-content .scorebox .score-text {
       -webkit-transition: bottom 0.5s ease;
       -moz-transition: bottom 0.5s ease;
