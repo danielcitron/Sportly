@@ -30,8 +30,7 @@ body {
   font-family: 'Bariol';
   font-weight: normal;
   margin: 0;
-  min-width: 730px;
-  position: relative; }
+  min-width: 730px; }
 
 .visible {
   display: block; }
@@ -476,6 +475,7 @@ body {
     height: 100%;
     background-size: cover;
     position: fixed;
+    top: 75;
     z-index: 1; }
   .cover #cover-ray-lewis {
     background: url("../img/player/lewis/cover.jpg") center;
@@ -552,17 +552,33 @@ body {
       padding-top: 10px;
       color: #6d6e71;
       text-align: center; }
+    .content .content-inner .separator {
+      height: 1px;
+      width: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #9b9b9b;
+      margin-top: 50px; }
+    .content .content-inner .header {
+      margin-top: 30px;
+      font-size: 20pt;
+      color: #cecece;
+      width: 100px;
+      text-align: left; }
+    .content .content-inner .recent-header {
+      width: 200px;
+      margin-top: 50px; }
     .content .content-inner .stats-container {
       -webkit-transition: height 0.6s ease;
       -moz-transition: height 0.6s ease;
       -ms-transition: height 0.6s ease;
       -o-transition: height 0.6s ease;
       transition: height 0.6s ease;
-      margin-top: 30px;
-      overflow: hidden;
+      margin-top: 10px;
+      overflow-y: scroll;
       height: 13%; }
       .content .content-inner .stats-container:hover {
-        height: 100%; }
+        height: 50%; }
       .content .content-inner .stats-container table {
         border-collapse: collapse;
         width: 100%; }
@@ -589,11 +605,24 @@ body {
         .content .content-inner .stats-container table td {
           color: #6d6e71; }
     .content .content-inner .articles {
-      margin-top: 50px;
+      margin-top: 20px;
       width: 100%;
       height: 120px;
       overflow-x: scroll;
-      white-space: nowrap; }
+      white-space: nowrap;
+      position: relative; }
+      .content .content-inner .articles .articles-right-arrow {
+        display: none;
+        position: absolute;
+        height: 98px;
+        width: 40px;
+        line-height: 70pt;
+        background: white;
+        font-size: 30pt;
+        color: #9b9b9b;
+        right: 0;
+        text-align: center;
+        border: 1px solid #e8e8e8; }
       .content .content-inner .articles .article:first-child {
         padding-left: 0px !important; }
       .content .content-inner .articles .article {

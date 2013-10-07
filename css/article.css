@@ -30,8 +30,7 @@ body {
   font-family: 'Bariol';
   font-weight: normal;
   margin: 0;
-  min-width: 730px;
-  position: relative; }
+  min-width: 730px; }
 
 .visible {
   display: block; }
