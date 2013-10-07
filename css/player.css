@@ -285,8 +285,6 @@ body {
         background: #fa4b2a;
         color: white;
         cursor: pointer; }
-      .menu-dropdown .logo-dropdown li:hover > #football {
-        background-size: cover; }
       .menu-dropdown .logo-dropdown li:hover > .dropdown-sport-logo {
         opacity: 1;
         cursor: pointer;

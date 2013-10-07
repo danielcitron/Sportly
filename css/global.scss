@@ -250,6 +250,7 @@ body {
     }
 
     #ticker {
+        
         display: inline-block;
         color: $lightgray;
         margin: 0px 32px 0px 32px;
@@ -449,7 +450,6 @@ body {
 
 
             &:hover > #football {
-                background-size: cover;
             }
 
             &:hover > .dropdown-sport-logo {

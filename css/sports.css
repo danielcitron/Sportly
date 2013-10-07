@@ -285,8 +285,6 @@ body {
         background: #fa4b2a;
         color: white;
         cursor: pointer; }
-      .menu-dropdown .logo-dropdown li:hover > #football {
-        background-size: cover; }
       .menu-dropdown .logo-dropdown li:hover > .dropdown-sport-logo {
         opacity: 1;
         cursor: pointer;
@@ -381,7 +379,8 @@ body {
   margin-right: 0; }
 
 body {
-  background: #000; }
+  background: #ffffff;
+  min-width: 1030px; }
 
 #sidebar {
   position: fixed;
@@ -389,7 +388,8 @@ body {
   width: 25%;
   background: #2c2d2e;
   right: 0;
-  border-left: 1px solid #9b9b9b; }
+  border-left: 1px solid #9b9b9b;
+  overflow-y: scroll; }
   #sidebar h1 {
     font-size: 17pt;
     color: #b4b4b4;
@@ -451,19 +451,28 @@ body {
           text-align: right; }
     #sidebar #sidebar-inner #headlines {
       margin-top: 25px;
-      border-bottom: 2px solid #b4b4b4; }
+      border-bottom: 2px solid #b4b4b4;
+      overflow: scroll;
+      height: 370px; }
+      #sidebar #sidebar-inner #headlines a {
+        text-decoration: none; }
       #sidebar #sidebar-inner #headlines .headline {
         color: #b4b4b4;
         line-height: 17pt;
         border-bottom: 2px solid #757575;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        text-decoration: none; }
+        #sidebar #sidebar-inner #headlines .headline:hover {
+          background: #fa4b2a;
+          color: white; }
         #sidebar #sidebar-inner #headlines .headline .headline-text {
-          margin-bottom: 5px; }
+          margin: 5px; }
 
 #stream {
   position: absolute;
   width: 75%; }
   #stream .stream-title-bar {
+    display: none;
     z-index: 100;
     margin-top: 75px;
     font-size: 35pt;
@@ -475,7 +484,6 @@ body {
     position: fixed; }
     #stream .stream-title-bar .football-icon {
       margin-left: 25px;
-      background: url("../img/search/footballw.png") center;
       background-size: cover;
       width: 30px;
       height: 30px;
@@ -484,13 +492,25 @@ body {
       display: inline-block; }
   #stream #stream-content {
     list-style-type: none;
-    margin-top: 139px; }
+    margin-top: 139px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media only screen and (min-width: 1420px) {
+      #stream #stream-content {
+        width: 1050px; } }
     #stream #stream-content .block {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
       background: #000;
       width: 250px;
       height: 250px;
       overflow: hidden;
-      border: 5px solid; }
+      border: 5px solid #ffffff; }
       #stream #stream-content .block:hover {
         cursor: pointer; }
       #stream #stream-content .block:hover > .block-pic {

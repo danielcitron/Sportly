@@ -1,7 +1,8 @@
 @import "global";
 
 body {
-	background: #000;
+	background: #ffffff;
+	min-width: 1030px;
 }
 
 #sidebar {
@@ -11,6 +12,7 @@ body {
 	background: darken($darkergray, 5%);
 	right: 0;
 	border-left: 1px solid $lightgray;
+	overflow-y: scroll;
 
 	h1 {
 		font-size: 17pt;
@@ -106,15 +108,27 @@ body {
 		#headlines {
 			margin-top: 25px;
 			border-bottom: 2px solid lighten($lightgray, 10%);
+			overflow: scroll;
+			height: 370px;
+
+			a {
+				text-decoration: none;
+			}
 
 			.headline {
 				color: lighten($lightgray, 10%);
 				line-height: 17pt;
 				border-bottom: 2px solid darken($lightgray, 15%);
 				margin-bottom: 5px;
+				text-decoration: none;
+
+				&:hover {
+					background: $orange;
+					color: white;
+				}
 
 				.headline-text {
-					margin-bottom: 5px;
+					margin: 5px;
 				}
 			}
 		}
@@ -129,6 +143,7 @@ body {
 
 
 	.stream-title-bar {
+		display: none;
 		z-index: 100;
 		margin-top: 75px;
 		font-size: 35pt;
@@ -141,7 +156,6 @@ body {
 
 		.football-icon {
 			margin-left: 25px;
-			background: url('../img/search/footballw.png') center;
 			background-size: cover;
 			width: 30px;
 			height: 30px;
@@ -156,13 +170,22 @@ body {
 	#stream-content {
 		list-style-type: none;
 		margin-top: 139px;
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+
+		@media only screen and (min-width : 1420px) {
+            width: 1050px;
+        }
 
 		.block {
+			@include box-sizing(border-box);
+			@include box-shadow(0px 1px 4px rgba(0,0,0,.4));
 			background: #000;
 			width: 250px;
 			height: 250px;
 			overflow: hidden;
-			border: 5px solid;
+			border: 5px solid #ffffff;
 
 			&:hover {
 				cursor: pointer;
