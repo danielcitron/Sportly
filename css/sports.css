@@ -503,9 +503,6 @@ body {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
-      -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
-      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
       background: #000;
       width: 250px;
       height: 250px;
@@ -598,25 +595,34 @@ body {
         background-size: cover;
         background-repeat: no-repeat; }
       #stream #stream-content .block #block-5 {
-        background: url("../img/blocks/5.jpg") center;
+        background: url("../img/football/5.jpg") center;
         background-size: cover;
         background-repeat: no-repeat; }
       #stream #stream-content .block #block-6 {
-        background: url("../img/blocks/6.jpg") center;
+        background: url("../img/football/6.jpg") center;
         background-size: cover;
         background-repeat: no-repeat; }
       #stream #stream-content .block #block-7 {
-        background: url("../img/blocks/7.jpg") center;
+        background: url("../img/football/7.jpg") center;
         background-size: cover;
         background-repeat: no-repeat; }
       #stream #stream-content .block #block-8 {
-        background: url("../img/blocks/8.jpg") center;
+        background: url("../img/football/8.jpg") center;
         background-size: cover;
         background-repeat: no-repeat; }
       #stream #stream-content .block #block-9 {
-        background: url("../img/blocks/9.jpg") center;
+        background: url("../img/football/9.jpg") center;
         background-size: cover;
         background-repeat: no-repeat; }
+      #stream #stream-content .block #block-10 {
+        background: url("../img/football/10.jpg") center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+    #stream #stream-content #block-last {
+      display: none; }
+      @media only screen and (min-width: 1420px) {
+        #stream #stream-content #block-last {
+          display: block; } }
     #stream #stream-content .portrait {
       height: 500px; }
       #stream #stream-content .portrait:hover > .caption-decoration {
@@ -629,41 +635,3 @@ body {
         top: 30%; }
       #stream #stream-content .landscape .caption {
         top: 40%; }
-
-.grid {
-  max-width: 69em;
-  list-style: none;
-  margin: 30px auto;
-  padding: 0; }
-
-.grid.effect-4 {
-  -webkit-perspective: 1300px;
-  -moz-perspective: 1300px;
-  perspective: 1300px; }
-
-.grid.effect-4 li.animate {
-  opacity: 0;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-  -moz-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-  transform: translateZ(400px) translateY(300px) rotateX(-90deg);
-  -webkit-animation: fallPerspective .8s ease-in-out forwards;
-  -moz-animation: fallPerspective .8s ease-in-out forwards;
-  animation: fallPerspective .8s ease-in-out forwards; }
-
-@-webkit-keyframes fallPerspective {
-  100% {
-    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    opacity: 1; } }
-
-@-moz-keyframes fallPerspective {
-  100% {
-    -moz-transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    opacity: 1; } }
-
-@keyframes fallPerspective {
-  100% {
-    transform: translateZ(0px) translateY(0px) rotateX(0deg);
-    opacity: 1; } }
