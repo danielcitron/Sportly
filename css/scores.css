@@ -98,6 +98,11 @@ body {
     display: inline-block;
     margin-top: 30px; }
   #menu-bar #ticker {
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
     display: inline-block;
     color: #9b9b9b;
     margin: 0px 32px 0px 32px;
@@ -109,7 +114,8 @@ body {
     height: 18px;
     overflow: hidden; }
     #menu-bar #ticker:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      color: #fa4b2a; }
     #menu-bar #ticker ul {
       -webkit-transition: top 0.25s ease;
       -moz-transition: top 0.25s ease;
@@ -237,7 +243,7 @@ body {
       transition: all 0.25s ease;
       position: fixed;
       right: 0;
-      height: 100%;
+      height: 71px;
       width: 50px;
       border-left: 1px solid #e8e8e8;
       text-align: center;
@@ -255,7 +261,7 @@ body {
       transition: all 0.25s ease;
       position: fixed;
       left: 0;
-      height: 100%;
+      height: 71px;
       width: 50px;
       border-right: 1px solid #e8e8e8;
       text-align: center;
