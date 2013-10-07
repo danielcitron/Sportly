@@ -284,14 +284,6 @@ body {
         height: 28px;
         @include transition(all .25s ease);
 
-        &:hover > .scores-more {
-            top: 0;
-        }
-
-        &:hover > .score-container {
-            top: -35;
-        }
-
         @media only screen and (min-width : 740px) {
             width: 125px;
         }
@@ -309,7 +301,7 @@ body {
         }
 
         @media only screen and (min-width : 1080px) {
-            width: 475px;
+            width: 480px;
         }
 
         @media only screen and (min-width : 1190px) {
@@ -318,12 +310,15 @@ body {
 
         .scores-more {
             @include transition(all .25s ease);
+            display: inline-block;
             font-family: BariolThin;
-            font-size: 20pt;
-            position: absolute;
-            top:28;
+            font-size: 9pt;
             text-decoration: none;
             color: $lightgray;
+            position: absolute;
+            right: 0;
+            padding: 3px;
+            bottom: -5;
 
             &:hover {
                 color: $orange;
@@ -337,6 +332,7 @@ body {
             margin-right: auto;
             top: 0;
             position: absolute;
+            right: 40;
         }
 
         #score {
@@ -364,6 +360,7 @@ body {
     white-space: nowrap;
     overflow-y: hidden;
     overflow-x: scroll;
+    border-top: 1px solid lighten($lightgray, 30%);
 
     .logo-dropdown {
         width: 100%;
@@ -372,6 +369,49 @@ body {
         list-style-type: none;
         padding: 0;
         margin:0;
+
+        .view-more-right {
+            @include transition(all .25s ease);
+            position: fixed;
+            right: 0;
+            height: 100%;
+            width: 50px;
+            border-left: 1px solid lighten($lightgray, 30%);
+            text-align: center;
+            background: white;
+            font-size: 40pt;
+            z-index: 10;
+
+            &:hover {
+                cursor: pointer;
+                background: darken(white, 5%);
+            }
+        }
+
+        .view-more-left {
+            @include transition(all .25s ease);
+            position: fixed;
+            left: 0;
+            height: 100%;
+            width: 50px;
+            border-right: 1px solid lighten($lightgray, 30%);
+            text-align: center;
+            background: white;
+            font-size: 40pt;
+            z-index: 10;
+
+            &:hover {
+                cursor: pointer;
+                background: darken(white, 5%);
+            }
+        }
+
+        #dropdown-swimming {
+            padding-right: 55px;
+        }
+        #dropdown-football {
+            padding-left: 55px;
+        }
 
         li {
             display: inline-block;
@@ -403,6 +443,7 @@ body {
                 cursor: pointer;
                 @include transform(rotateZ(90deg) scale(1.2));
             }
+
 
             .dropdown-sport-logo {
                 @include transition(all .25s ease);

@@ -138,10 +138,6 @@ body {
     -ms-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease; }
-    #menu-bar #menu-scores:hover > .scores-more {
-      top: 0; }
-    #menu-bar #menu-scores:hover > .score-container {
-      top: -35; }
     @media only screen and (min-width: 740px) {
       #menu-bar #menu-scores {
         width: 125px; } }
@@ -156,7 +152,7 @@ body {
         width: 350px; } }
     @media only screen and (min-width: 1080px) {
       #menu-bar #menu-scores {
-        width: 475px; } }
+        width: 480px; } }
     @media only screen and (min-width: 1190px) {
       #menu-bar #menu-scores {
         width: 575px; } }
@@ -166,12 +162,15 @@ body {
       -ms-transition: all 0.25s ease;
       -o-transition: all 0.25s ease;
       transition: all 0.25s ease;
+      display: inline-block;
       font-family: BariolThin;
-      font-size: 20pt;
-      position: absolute;
-      top: 28;
+      font-size: 9pt;
       text-decoration: none;
-      color: #9b9b9b; }
+      color: #9b9b9b;
+      position: absolute;
+      right: 0;
+      padding: 3px;
+      bottom: -5; }
       #menu-bar #menu-scores .scores-more:hover {
         color: #fa4b2a;
         cursor: pointer; }
@@ -184,7 +183,8 @@ body {
       margin-left: auto;
       margin-right: auto;
       top: 0;
-      position: absolute; }
+      position: absolute;
+      right: 40; }
     #menu-bar #menu-scores #score {
       display: inline-block;
       margin-right: 30px; }
@@ -207,7 +207,8 @@ body {
   list-style-type: none;
   white-space: nowrap;
   overflow-y: hidden;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  border-top: 1px solid #e8e8e8; }
   .menu-dropdown .logo-dropdown {
     width: 100%;
     height: 100%;
@@ -215,6 +216,46 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0; }
+    .menu-dropdown .logo-dropdown .view-more-right {
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+      position: fixed;
+      right: 0;
+      height: 100%;
+      width: 50px;
+      border-left: 1px solid #e8e8e8;
+      text-align: center;
+      background: white;
+      font-size: 40pt;
+      z-index: 10; }
+      .menu-dropdown .logo-dropdown .view-more-right:hover {
+        cursor: pointer;
+        background: #f2f2f2; }
+    .menu-dropdown .logo-dropdown .view-more-left {
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      -ms-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+      position: fixed;
+      left: 0;
+      height: 100%;
+      width: 50px;
+      border-right: 1px solid #e8e8e8;
+      text-align: center;
+      background: white;
+      font-size: 40pt;
+      z-index: 10; }
+      .menu-dropdown .logo-dropdown .view-more-left:hover {
+        cursor: pointer;
+        background: #f2f2f2; }
+    .menu-dropdown .logo-dropdown #dropdown-swimming {
+      padding-right: 55px; }
+    .menu-dropdown .logo-dropdown #dropdown-football {
+      padding-left: 55px; }
     .menu-dropdown .logo-dropdown li {
       display: inline-block;
       height: 70px;

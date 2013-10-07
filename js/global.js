@@ -22,6 +22,16 @@ $( document ).ready(function() {
 		}
 	});
 
+	
+	//scrollers for dropdown menu
+	$('.view-more-right').click(function() {
+		$('.menu-dropdown').animate( { scrollLeft: '+=250' }, 500 ); 
+	});
+
+	$('.view-more-left').click(function() {
+		$('.menu-dropdown').animate( { scrollLeft: '-=250' }, 500 ); 
+	});
+
 	//smooth scrolling - src: http://css-tricks.com/snippets/jquery/smooth-scrolling/
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
