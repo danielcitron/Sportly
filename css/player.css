@@ -166,13 +166,14 @@ body {
       font-family: BariolThin;
       font-size: 9pt;
       text-decoration: none;
-      color: #9b9b9b;
+      color: white;
       position: absolute;
       right: 0;
       padding: 3px;
-      bottom: -5; }
+      bottom: -1;
+      background: #9b9b9b; }
       #menu-bar #menu-scores .scores-more:hover {
-        color: #fa4b2a;
+        background: #fa4b2a;
         cursor: pointer; }
     #menu-bar #menu-scores .score-container {
       -webkit-transition: top 0.25s ease;

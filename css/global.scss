@@ -38,6 +38,12 @@
     box-shadow: #{$value};
 }
 
+@mixin box-sizing($value) {
+  -webkit-box-sizing: $value; // Safari <= 5
+     -moz-box-sizing: $value; // Firefox <= 19
+          box-sizing: $value;
+}
+
 @mixin opacity($value) {
     opacity: $value;
     -webkit-opacity: $value;
@@ -314,14 +320,15 @@ body {
             font-family: BariolThin;
             font-size: 9pt;
             text-decoration: none;
-            color: $lightgray;
+            color: white;
             position: absolute;
             right: 0;
             padding: 3px;
-            bottom: -5;
+            bottom: -1;
+            background: $lightgray;
 
             &:hover {
-                color: $orange;
+                background: $orange;
                 cursor: pointer;
             }
         }
