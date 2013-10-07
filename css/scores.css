@@ -52,6 +52,7 @@ body {
   -ms-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
+  border-top: 3px solid #fa4b2a;
   width: 100%;
   height: 75px;
   background: rgba(255, 255, 255, 0.97);
@@ -208,16 +209,19 @@ body {
   -ms-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   height: 70px;
   position: fixed;
-  top: 76;
+  top: 80;
   padding: 0;
   list-style-type: none;
   white-space: nowrap;
   overflow-y: hidden;
   overflow-x: scroll;
-  border-top: 1px solid #e8e8e8; }
+  border-top: 1px solid #cecece; }
   .menu-dropdown .logo-dropdown {
     width: 100%;
     height: 100%;
@@ -282,7 +286,6 @@ body {
         color: white;
         cursor: pointer; }
       .menu-dropdown .logo-dropdown li:hover > #football {
-        background: url("../img/search/footballw.png") center;
         background-size: cover; }
       .menu-dropdown .logo-dropdown li:hover > .dropdown-sport-logo {
         opacity: 1;
@@ -349,19 +352,19 @@ body {
   color: #47bee2; }
 
 #soccer {
-  background: url("../img/search/soccer.png") center;
+  background: url("../img/icons/black/soccer.png") center;
   background-size: cover; }
 
 #basketball {
-  background: url("../img/search/basketball.png") center;
+  background: url("../img/icons/black/basketball.png") center;
   background-size: cover; }
 
 #football {
-  background: url("../img/search/football.png") center;
+  background: url("../img/icons/black/football.png") center;
   background-size: cover; }
 
 #baseball {
-  background: url("../img/search/baseball.png") center;
+  background: url("../img/icons/black/baseball.png") center;
   background-size: cover; }
 
 #hockey {

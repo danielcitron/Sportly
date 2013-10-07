@@ -198,6 +198,7 @@ body {
 
 #menu-bar {
     @include transition(all .25s ease);
+    border-top: 3px solid $orange;
     width: 100%;
     height: 75px;
     background: rgba(255, 255, 255, 0.97);
@@ -364,16 +365,17 @@ body {
 
 .menu-dropdown {
     @include transition(all .25s ease);
+    @include box-sizing(border-box);
     width: 100%;
     height: 70px;
     position: fixed;
-    top: 76;
+    top: 80;
     padding: 0;
     list-style-type: none;
     white-space: nowrap;
     overflow-y: hidden;
     overflow-x: scroll;
-    border-top: 1px solid lighten($lightgray, 30%);
+    border-top: 1px solid lighten($lightgray, 20%);
 
     .logo-dropdown {
         width: 100%;
@@ -447,7 +449,6 @@ body {
 
 
             &:hover > #football {
-                background: url('../img/search/footballw.png') center;
                 background-size: cover;
             }
 
@@ -528,22 +529,22 @@ body {
 //icons
 
 #soccer {
-    background: url('../img/search/soccer.png') center;
+    background: url('../img/icons/black/soccer.png') center;
     background-size: cover;
 }
 
 #basketball {
-    background: url('../img/search/basketball.png') center;
+    background: url('../img/icons/black/basketball.png') center;
     background-size: cover;
 }
 
 #football {
-    background: url('../img/search/football.png') center;
+    background: url('../img/icons/black/football.png') center;
     background-size: cover;
 }
 
 #baseball {
-    background: url('../img/search/baseball.png') center;
+    background: url('../img/icons/black/baseball.png') center;
     background-size: cover;
 }
 
