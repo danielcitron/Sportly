@@ -170,7 +170,7 @@ body {
       position: absolute;
       right: 0;
       padding: 3px;
-      bottom: -1;
+      bottom: 3;
       background: #9b9b9b; }
       #menu-bar #menu-scores .scores-more:hover {
         background: #fa4b2a;
@@ -187,8 +187,16 @@ body {
       position: absolute;
       right: 40; }
     #menu-bar #menu-scores #score {
+      -webkit-transition: color 0.25s ease;
+      -moz-transition: color 0.25s ease;
+      -ms-transition: color 0.25s ease;
+      -o-transition: color 0.25s ease;
+      transition: color 0.25s ease;
       display: inline-block;
       margin-right: 30px; }
+      #menu-bar #menu-scores #score:hover {
+        cursor: pointer;
+        color: #fa4b2a; }
       #menu-bar #menu-scores #score .team-name {
         font-family: BariolBold;
         font-weight: normal;

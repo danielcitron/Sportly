@@ -166,13 +166,14 @@ body {
       font-family: BariolThin;
       font-size: 9pt;
       text-decoration: none;
-      color: #9b9b9b;
+      color: white;
       position: absolute;
       right: 0;
       padding: 3px;
-      bottom: -5; }
+      bottom: 3;
+      background: #9b9b9b; }
       #menu-bar #menu-scores .scores-more:hover {
-        color: #fa4b2a;
+        background: #fa4b2a;
         cursor: pointer; }
     #menu-bar #menu-scores .score-container {
       -webkit-transition: top 0.25s ease;
@@ -186,8 +187,16 @@ body {
       position: absolute;
       right: 40; }
     #menu-bar #menu-scores #score {
+      -webkit-transition: color 0.25s ease;
+      -moz-transition: color 0.25s ease;
+      -ms-transition: color 0.25s ease;
+      -o-transition: color 0.25s ease;
+      transition: color 0.25s ease;
       display: inline-block;
       margin-right: 30px; }
+      #menu-bar #menu-scores #score:hover {
+        cursor: pointer;
+        color: #fa4b2a; }
       #menu-bar #menu-scores #score .team-name {
         font-family: BariolBold;
         font-weight: normal;
@@ -393,13 +402,6 @@ body {
     -webkit-border-radius: 7px; }
     .scores-content .scorebox:hover {
       cursor: pointer; }
-    .scores-content .scorebox:hover > .score-text {
-      bottom: 0; }
-    .scores-content .scorebox:hover > .score-photo {
-      width: 100%;
-      height: 100%;
-      left: 0;
-      opacity: .7; }
     .scores-content .scorebox .score-photo {
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
@@ -413,6 +415,11 @@ body {
       left: -10%;
       background-size: cover;
       background-repeat: no-repeat; }
+      .scores-content .scorebox .score-photo.closed {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        opacity: .7; }
     .scores-content .scorebox #photo-1 {
       background: url("../img/scores/1.jpg");
       background-size: cover; }
@@ -451,6 +458,8 @@ body {
       height: 100%;
       background: white;
       bottom: -85%; }
+      .scores-content .scorebox .score-text.open {
+        bottom: 0; }
       .scores-content .scorebox .score-text .score-header {
         width: 80%;
         height: 15%;

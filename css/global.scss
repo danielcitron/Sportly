@@ -324,7 +324,7 @@ body {
             position: absolute;
             right: 0;
             padding: 3px;
-            bottom: -1;
+            bottom: 3;
             background: $lightgray;
 
             &:hover {
@@ -343,8 +343,14 @@ body {
         }
 
         #score {
+            @include transition(color .25s ease);
             display: inline-block;
             margin-right: 30px;
+
+            &:hover {
+                cursor: pointer;
+                color: $orange;
+            }
 
             .team-name {
                 font-family: BariolBold;

@@ -12,7 +12,7 @@
 	}
 
 	.scorebox {
-		float:left;
+		float: left;
 		margin: 2%;
 		display: inline-block;
 		width: 300px;
@@ -27,17 +27,6 @@
 			cursor: pointer;
 		}
 
-		&:hover > .score-text {
-			bottom: 0;
-		}
-
-		&:hover > .score-photo {
-			width: 100%;
-			height: 100%;
-			left: 0;
-			opacity: .7;
-		}
-
 		.score-photo {
 			@include transition(all .5s ease);
 			position: absolute;
@@ -47,6 +36,13 @@
 			left:-10%;
 			background-size: cover;
 			background-repeat: no-repeat;
+
+			&.closed {
+				width: 100%;
+				height: 100%;
+				left: 0;
+				opacity: .7;
+			}
 		}
 
 		#photo-1 {
@@ -99,6 +95,10 @@
 			height: 100%;
 			background: white;
 			bottom: -85%;
+
+			&.open {
+				bottom: 0;
+			}
 
 			.score-header {
 				width: 80%;
