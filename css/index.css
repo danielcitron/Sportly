@@ -425,40 +425,6 @@ body {
   background-size: cover;
   margin-right: 0; }
 
-#footer {
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  background: black;
-  bottom: 0;
-  z-index: 10000;
-  float: bottom; }
-  #footer .footer-logo-container {
-    display: none;
-    width: 175px;
-    height: 24px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    position: relative; }
-    #footer .footer-logo-container .footer-logo {
-      -webkit-transition: top 0.15s ease;
-      -moz-transition: top 0.15s ease;
-      -ms-transition: top 0.15s ease;
-      -o-transition: top 0.15s ease;
-      transition: top 0.15s ease;
-      width: 125px;
-      height: 48px;
-      background: url("../img/logo.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 0; }
-      #footer .footer-logo-container .footer-logo:hover {
-        cursor: pointer;
-        top: -24px; }
-
 ::selection {
   background: #fa4b2a;
   color: white; }
@@ -597,7 +563,8 @@ body {
     top: 80%;
     width: 100%;
     z-index: 2;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    background: #000000; }
     body #story-stream #stories-header {
       width: 100%;
       height: 50px;

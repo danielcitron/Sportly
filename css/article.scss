@@ -70,7 +70,7 @@
 
 		&.stuck {
 			position: fixed;
-			top: 70;
+			top: 140px;
 			border-bottom: 1px solid lighten($lightgray, 25%);
 			height: 65px;
 
@@ -207,6 +207,7 @@
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
+		min-width: 680px;
 
 	}
 
@@ -394,12 +395,60 @@
 		background-position-y: 80%;
 	}
 
-	.final-score {
-		width:40%;
-		padding-left: 5%;
+	.article-finale {
+		position: relative;
 		height: 250px;
-		margin-left: auto;
+	}
+
+	.final-logo {
+		@include transition(all .25s ease);
+		display: inline-block;
+		position: absolute;
+		width: 150px;
+		height: 100px;
+		background: $blue;
+		margin-top: 50px;
+
+	}
+
+	#ravens {
+		margin-left: 20px;
+		background: url('../img/superbowl/ravens.png') center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 130px;
+
+		@media only screen and (min-width : 1030px) {
+		   width: 280px;
+		   height: 200px;
+		   margin-top: 20px;
+		}
+	}
+
+	#fortyniners {
+		background: url('../img/superbowl/49ers.png') center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		right: 0;
+		margin-right: 20px;
+
+		@media only screen and (min-width : 1030px) {
+		   width: 305px;
+		   height: 200px;
+		   margin-top: 20px;
+		}
+	}
+
+	.final-score {
+		position: absolute;
+		width: 409px;
+		height: 250px;
+		margin-left: 200px;
 		margin-right: auto;
+
+		@media only screen and (min-width : 1030px) {
+		   margin-left: 300px;
+		}
 
 		.final-number-container {
 			font-family: BariolThin;

@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".article-header").waypoint("sticky",{offset:75})});
+$(document).ready(function(){$(".article-header").waypoint("sticky",{offset:140})});
