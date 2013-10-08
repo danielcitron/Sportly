@@ -756,6 +756,32 @@ body {
             height: 110%;
             opacity: 1;
             z-index: 10; }
+          body #story-stream #stories #story-grid .story-block .tag-container {
+            position: absolute;
+            bottom: 0;
+            font-family: BariolThin;
+            padding-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            z-index: 100; }
+            body #story-stream #stories #story-grid .story-block .tag-container .first {
+              margin-left: 10px; }
+            body #story-stream #stories #story-grid .story-block .tag-container .tag {
+              -webkit-transition: opacity 0.25s ease;
+              -moz-transition: opacity 0.25s ease;
+              -ms-transition: opacity 0.25s ease;
+              -o-transition: opacity 0.25s ease;
+              transition: opacity 0.25s ease;
+              display: inline-block;
+              color: white;
+              padding: 0 5 0 5;
+              margin-bottom: 5px; }
+              body #story-stream #stories #story-grid .story-block .tag-container .tag:hover {
+                opacity: .8; }
+            body #story-stream #stories #story-grid .story-block .tag-container .tag-comma {
+              display: inline-block;
+              color: #9b9b9b; }
           body #story-stream #stories #story-grid .story-block .block-category {
             -webkit-transition: all 0.25s ease;
             -moz-transition: all 0.25s ease;
@@ -767,8 +793,8 @@ body {
             width: 13%;
             height: 13%;
             position: absolute;
-            bottom: 0;
-            left: 0;
+            top: 0;
+            right: 0;
             z-index: 11; }
             body #story-stream #stories #story-grid .story-block .block-category .block-category-icon {
               -webkit-transition: all 0.25s ease;

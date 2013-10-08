@@ -358,6 +358,37 @@ body {
 						z-index: 10;
 					}
 
+					.tag-container {
+						position: absolute;
+						bottom: 0;
+						font-family: BariolThin;
+						padding-top: 10px;
+						margin-left: auto;
+						margin-right: auto;
+						width: 100%;
+						z-index: 100;
+
+						.first {
+							margin-left: 10px;
+						}
+						
+						.tag {
+							@include transition(opacity .25s ease);
+							display: inline-block;
+							color: white;
+							padding: 0 5 0 5;
+							margin-bottom: 5px;
+
+							&:hover {
+								opacity: .8;
+							}
+						}
+						.tag-comma {
+							display: inline-block;
+							color: $lightgray;
+						}
+					}
+
 					.block-category {
 						@include transition(all .25s ease);
 						background: white;
@@ -365,8 +396,8 @@ body {
 						width: 13%;
 						height: 13%;
 						position: absolute;
-						bottom:0;
-						left: 0;
+						top:0;
+						right: 0;
 						z-index: 11;
 
 						.block-category-icon {
