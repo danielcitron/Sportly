@@ -1,8 +1,8 @@
 @import "global";
 
 .scores-content {
-	margin-top: 80px;
-	width: 90%;
+	margin-top: 160px;
+	width: 1024px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 50px;
@@ -85,6 +85,11 @@
 
 		#photo-8 {
 			background: url('../img/scores/8.jpg') center;
+			background-size: cover;
+		}
+
+		#photo-9 {
+			background: url('../img/scores/9.jpg') center;
 			background-size: cover;
 		}
 
